@@ -10,8 +10,4 @@
 /dataSources.local.xml
 
 
-/*
-!.gitignore
-!/build
-!/index.php
-!/sources
+
