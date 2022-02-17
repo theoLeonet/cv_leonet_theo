@@ -1,6 +1,6 @@
 # CV Théo Léonet
 
-###### This website was made as an exercise for my lessons at HEPL, a school in Liège Belgium.
+###### This website was made as an exercise for my lessons at HEPL, a school in Liège Belgium. 
 
 ---
 
