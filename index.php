@@ -80,11 +80,14 @@
             </ul>
         </nav>
 </header>
+<video class="background__video" autoplay loop muted>
+    <source src="sources/images/coding_blured.mp4" type="video/mp4">
+</video>
 <section class="intro">
     <h2 class="intro__title">
         Théo Léonet
     </h2>
-    <p class="intro__subtitle">
+    <p class="intro__sub">
         Fondateur de la WDF
     </p>
     <p class="intro__description">
@@ -92,25 +95,23 @@
     </p>
     <?php for($i = 0; $i < count($intro['numbers']); $i++): ?>
     <div class="intro__info">
-        <h3 class="intro__info__title">
+        <p class="intro__info__title">
             <?= $intro['numbers'][$i] ?>
-        </h3>
+        </p>
         <p class="intro__info__sub">
             <?= $intro['texts'][$i] ?>
         </p>
     </div>
     <?php endfor; ?>
-    <div class="btn__share">
-        <p>
-            Je partage
-        </p>
-    </div>
+    <p class="intro__btn__share btn__share">
+        Je partage
+    </p>
 </section>
 <section class="about">
     <h2 class="about__title">
         THÉO
     </h2>
-    <img src="" alt="">
+    <img src="" alt="a">
     <ul class="about__infos">
         <?php for($i=0; $i<count($about['subtitles']); $i++):?>
         <li class="infos__info">

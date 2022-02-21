@@ -1,5 +1,51 @@
 //----- INTRO -----//
+.intro{
+  width: 85%;
+  margin: 17.5em auto 0; //280/16
+
+  color: white;
+}
 .intro__title{
   font-family: "open sans", sans-serif;
   font-weight: 700;
+  font-size: 0.6875em; //11/16
+  text-transform: uppercase;
+}
+.intro__sub{
+  width: 3.75em; //300/80
+
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 5em; //80/16
+  text-transform: Uppercase;
+  line-height: 1.2;
+
+  margin-top: .25em; //20/80
+}
+.intro__description{
+  width: clamp(300px, 50%, 700px);
+  margin: 11em clamp(0px, calc(100% - 300px), 100px) 0; //220/22
+
+  font-family: "georgia", serif;
+  font-size: 1.375em; // 22/16
+  font-style: italic;
+  line-height: 1.8666;
+}
+.intro__info__title{
+  margin: 1.33333333em clamp(0px, calc(100% - 300px), 100px) 0; //200/150
+
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 9.375em; //150/16
+}
+.intro__info__sub{
+  width: clamp(300px, 50%, 400px);
+  margin: 1.11111111em clamp(0px, calc(100% - 300px), 100px) 0; //20/18
+
+  font-family: "open sans", sans-serif;
+  font-size: 1.125em; //18/16
+  line-height: 1.8666;
+}
+
+.intro__btn__share{
+  width: max-content;
+  margin: 14.5em auto 8em; //290/20 160/20
 }

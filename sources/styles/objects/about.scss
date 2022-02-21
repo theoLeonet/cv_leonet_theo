@@ -1,0 +1,32 @@
+.about{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  z-index: -2;
+  width: 80%;
+  padding: 6.25em 10% 0; //100/16
+
+  background: $light_gray_bg;
+}
+.about__title{
+  position: absolute;
+  margin:0 clamp(0px, calc(100% - 360px), 100px) 0;
+  z-index: -1;
+
+  font-family: "bebas neue pro", sans-serif;
+  font-size: clamp(200px, calc(1vw + 200px), 400px); //230/16
+
+  color: $light_gray_text;
+}
+.about__infos{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about__info__title{
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 1.125em; //18/16
+}
+.about__info__sub{
+  font-family: "open sans", sans-serif;
+  font-size: 1.125em; //18/16
+}

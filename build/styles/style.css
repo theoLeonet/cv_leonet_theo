@@ -94,11 +94,7 @@ header {
   padding: 0 10%;
   display: grid;
   grid-template: 0.5fr 1fr/15% 85%;
-}
-
-.intro__title {
-  font-family: "open sans", sans-serif;
-  font-weight: 700;
+  background: white;
 }
 
 .header__title {
@@ -223,6 +219,110 @@ header {
 
 .main-nav__sec-menu__link + .main-nav__sec-menu__link {
   margin-left: 4.61538462em;
+}
+
+.intro {
+  width: 85%;
+  margin: 17.5em auto 0;
+  color: white;
+}
+
+.intro__title {
+  font-family: "open sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.6875em;
+  text-transform: uppercase;
+}
+
+.intro__sub {
+  width: 3.75em;
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 5em;
+  text-transform: Uppercase;
+  line-height: 1.2;
+  margin-top: 0.25em;
+}
+
+.intro__description {
+  width: clamp(300px, 50%, 700px);
+  margin: 11em clamp(0px, 100% - 300px, 100px) 0;
+  font-family: "georgia", serif;
+  font-size: 1.375em;
+  font-style: italic;
+  line-height: 1.8666;
+}
+
+.intro__info__title {
+  margin: 1.33333333em clamp(0px, 100% - 300px, 100px) 0;
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 9.375em;
+}
+
+.intro__info__sub {
+  width: clamp(300px, 50%, 400px);
+  margin: 1.11111111em clamp(0px, 100% - 300px, 100px) 0;
+  font-family: "open sans", sans-serif;
+  font-size: 1.125em;
+  line-height: 1.8666;
+}
+
+.intro__btn__share {
+  width: max-content;
+  margin: 14.5em auto 8em;
+}
+
+.about {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  z-index: -2;
+  width: 80%;
+  padding: 6.25em 10% 0;
+  background: #F3F3F3;
+}
+
+.about__title {
+  position: absolute;
+  margin: 0 clamp(0px, 100% - 360px, 100px) 0;
+  z-index: -1;
+  font-family: "bebas neue pro", sans-serif;
+  font-size: clamp(200px, 1vw + 200px, 400px);
+  color: #E6E6E6;
+}
+
+.about__infos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about__info__title {
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 1.125em;
+}
+
+.about__info__sub {
+  font-family: "open sans", sans-serif;
+  font-size: 1.125em;
+}
+
+.btn__share {
+  background: #f07f00;
+  padding: 0.7em 1.4em;
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+
+.background__video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -10;
 }
 
 .hidden {
