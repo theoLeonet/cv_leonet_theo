@@ -111,7 +111,7 @@
     <h2 class="about__title">
         THÉO
     </h2>
-    <img src="" alt="a">
+    <img src="/sources/images/shrek.png" alt="shrek" class="about__image">
     <ul class="about__infos">
         <?php for($i=0; $i<count($about['subtitles']); $i++):?>
         <li class="infos__info">

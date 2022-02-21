@@ -283,24 +283,36 @@ header {
 
 .about__title {
   position: absolute;
-  margin: 0 clamp(0px, 100% - 360px, 100px) 0;
+  margin: 0.5em clamp(0px, 30%, 10000px) 0;
   z-index: -1;
   font-family: "bebas neue pro", sans-serif;
-  font-size: clamp(200px, 1vw + 200px, 400px);
+  font-size: clamp(200px, 1vw + 200px, 300px);
   color: #E6E6E6;
+}
+
+.about__image {
+  width: clamp(400px, 65%, 700px);
+  aspect-ratio: 2/3;
+  margin-top: 5em;
 }
 
 .about__infos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, clamp(300px, 40%, 700px));
+  grid-gap: 3.125em;
+  margin-top: 10em;
+  justify-content: center;
 }
 
 .about__info__title {
   font-family: "bebas neue pro", sans-serif;
   font-size: 1.125em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .about__info__sub {
+  margin-top: 0.66666667em;
   font-family: "open sans", sans-serif;
   font-size: 1.125em;
 }
