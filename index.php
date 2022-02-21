@@ -129,24 +129,41 @@
         <h2 class="hidden">
             Le saviez vous?
         </h2>
-        <?php for($i=0; $i<count($did_you_know['subtitles']); $i++):?>
-        <article class="did-you-know__slide">
-            <h3 class="slide__title">
-                Le saviez-vous ?
-            </h3>
-            <p class="slide__sub">
-                <?= $did_you_know['subtitles'][$i] ?>
-            </p>
-            <p class="slide__text">
-                <?= $did_you_know['texts'][$i] ?>
-            </p>
-            <div class="btn__share">
-                <p>
-                    Je partage
-                </p>
-            </div>
-        </article>
-        <?php endfor; ?>
+        <div class="left-arrow__btn">
+            <img src="" alt="a">
+        </div>
+        <div class="did-you-know__slider">
+            <?php for($i=0; $i<count($did_you_know['subtitles']); $i++):?>
+                <article class="did-you-know__slide">
+                    <h3 class="slide__title">
+                        Le saviez-vous ?
+                    </h3>
+                    <p class="slide__sub">
+                        <?= $did_you_know['subtitles'][$i] ?>
+                    </p>
+                    <p class="slide__text">
+                        <?= $did_you_know['texts'][$i] ?>
+                    </p>
+                    <div class="slide__btn__share btn__share">
+                        <p>
+                            Je partage
+                        </p>
+                    </div>
+                </article>
+            <?php endfor; ?>
+        </div>
+        <div class="right-arrow__btn">
+            <img src="" alt="a">
+        </div>
+        <svg class="slider__dots" xmlns="http://www.w3.org/2000/svg" width="80" height="10" viewBox="0 0 80 10">
+            <g id="Dots" transform="translate(-2860 -6008)">
+                <circle id="Ellipse_2" data-name="Ellipse 2" cx="4" cy="4" r="4" transform="translate(2860 6008)"/>
+                <circle id="Ellipse_3" data-name="Ellipse 3" cx="4" cy="4" r="4" transform="translate(2875 6008)" fill="#797979"/>
+                <circle id="Ellipse_4" data-name="Ellipse 4" cx="4" cy="4" r="4" transform="translate(2890 6008)" fill="#797979"/>
+                <circle id="Ellipse_5" data-name="Ellipse 5" cx="4" cy="4" r="4" transform="translate(2905 6008)" fill="#797979"/>
+                <circle id="Ellipse_6" data-name="Ellipse 6" cx="4" cy="4" r="4" transform="translate(2920 6008)" fill="#797979"/>
+            </g>
+        </svg>
     </section>
 <section class="projects">
         <h2>
@@ -324,5 +341,6 @@
         <?php endfor; ?>
     </ul>
 </footer>
+<script src="build/scripts/main.js"></script>
 </body>
 </html>
