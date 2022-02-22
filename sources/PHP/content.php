@@ -112,10 +112,10 @@ $did_you_know = [
 ];
 $projects = [
     'images__src' => [
-        '/images/fake_project_1.jpg',
-        '/images/fake_project_1.jpg',
-        '/images/fake_project_1.jpg',
-        '/images/fake_project_1.jpg',
+        'sources/images/forest.jpg',
+        'sources/images/forest.jpg',
+        'sources/images/forest.jpg',
+        'sources/images/forest.jpg',
     ],
     'images__alt' => [
         'fake_project_1',

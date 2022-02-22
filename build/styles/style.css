@@ -392,6 +392,61 @@ header {
   margin: 2.5em auto;
 }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5em;
+  width: 85%;
+  margin: 4.375em auto;
+}
+
+.projects__title {
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 3.4375em;
+  font-weight: bold;
+}
+
+.projects__sub {
+  grid-column: 1/2;
+  width: 85%;
+  font-family: "open sans", sans-serif;
+  font-size: 0.9375em;
+  line-height: 1.866;
+}
+
+.projects__project {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__project:nth-child(odd) {
+  grid-column: 1/2;
+}
+
+.projects__project:nth-child(even) {
+  grid-column: 2/3;
+}
+
+.projects__project:nth-child(n+5) {
+  margin-top: 6em;
+}
+
+.project__image {
+  width: 100%;
+}
+
+.project__name {
+  width: max-content;
+  align-self: flex-end;
+  padding: 1em 1.5em;
+  margin: -1.5em 0 0;
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 1.875em;
+  text-transform: uppercase;
+  color: white;
+  background: black;
+}
+
 .btn__share {
   padding: 0.7em 1.4em;
   font-family: "bebas neue pro", sans-serif;

@@ -166,7 +166,7 @@
         </svg>
     </section>
 <section class="projects">
-        <h2>
+        <h2 class="projects__title">
             Les projets qu’il a réalisé
         </h2>
         <p class="projects__sub">
@@ -174,8 +174,8 @@
         </p>
         <?php for ($i=0; $i<count($projects['names']); $i++): ?>
         <div class="projects__project">
-            <img src="<?= $projects['images__src'][$i] ?>" alt="<?= $projects['images__alt'][$i] ?>">
-            <div>
+            <img src="<?= $projects['images__src'][$i] ?>" alt="<?= $projects['images__alt'][$i] ?>" class="project__image">
+            <div class="project__name">
                 <p>
                     <?= $projects['names'][$i] ?>
                 </p>

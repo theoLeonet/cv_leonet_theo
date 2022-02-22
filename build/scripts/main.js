@@ -1,12 +1,12 @@
 var backgroundVideo = document.querySelector('.background__video');
-var lastIntroTitle = document.querySelector('.intro div:last-of-type');
+var about = document.querySelector('.about');
 document.addEventListener('scroll', function (e) {
-    console.log(lastIntroTitle.offsetTop, scrollY);
-    if (scrollY > lastIntroTitle.offsetTop) {
+    //console.log(intro.offsetHeight, window.innerHeight, scrollY, intro.offsetHeight - window.innerHeight);
+    if (scrollY > about.offsetTop - window.innerHeight) {
         backgroundVideo.classList.add('not-fixed');
-        backgroundVideo.style.top = lastIntroTitle.offsetTop + "px";
+        backgroundVideo.style.top = about.offsetTop - window.innerHeight + 'px';
     }
-    if (scrollY < lastIntroTitle.offsetTop) {
+    if (scrollY < about.offsetTop - window.innerHeight) {
         backgroundVideo.classList.remove('not-fixed');
         backgroundVideo.style.top = 0;
     }
