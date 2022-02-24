@@ -142,9 +142,9 @@ $engagement = [
         'Dans le monde, trop de personnes sont incapables d’utiliser internet et les ordinateurs d’une bonne manière. C’est pourquoi toute une section de nos cours est dédiée à l’apprentissage de l’utilisation d’un ordinateur et d’internet. Le mieux? Ces cours sont complètement gratuits!'
     ],
     'images__src' => [
-        '/images/forest.jpg',
-        '/images/forest.jpg',
-        '/images/forest.jpg',
+        'sources/images/forest.jpg',
+        'sources/images/forest.jpg',
+        'sources/images/forest.jpg',
     ],
     'images__alt' => [
         'forest.jpg',

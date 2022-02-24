@@ -185,29 +185,32 @@
 </section>
 <section class="engagement">
     <h2 class="engagement__title">
-        L’ENGAGEMENT DE LA WDF-BELGIQUE
+        L’engagement de la WDF Belgique
     </h2>
     <p class="engagement__desc">
         La WDF s’engage à fournir des contenus de qualité à petit prix et à utiliser cet argent pour aider les développeurs prometteurs à se lancer dans le web.
     </p>
     <?php for ($i=0; $i<count($engagement['titles']); $i++): ?>
     <section class="engagement__infos">
+        <div class="engagement__info__texts">
             <h3 class="engagement__info__title">
                 <?= $engagement['titles'][$i] ?>
             </h3>
             <p class="engagement__info__sub">
                 <?= $engagement['texts'][$i] ?>
             </p>
-        <img src="<?= $engagement['images__src'][$i] ?>" alt="<?= $engagement['images__alt'][$i] ?>">
+        </div>
+        <img class="engagement__info__image" src="<?= $engagement['images__src'][$i] ?>" alt="<?= $engagement['images__alt'][$i] ?>">
     </section>
     <?php endfor; ?>
-    <section class="projects__images">
+</section>
+<section class="projects__images">
     <h2 class="projects__images__title">
         Images des projets
     </h2>
-        <?php for ($i=0; $i<count($pictures['src']); $i++): ?>
-        <img src="<?= $pictures['src'][$i] ?>" alt="<?= $pictures['alt'][$i] ?>">
-        <?php endfor; ?>
+    <?php for ($i=0; $i<count($pictures['src']); $i++): ?>
+    <img src="<?= $pictures['src'][$i] ?>" alt="<?= $pictures['alt'][$i] ?>">
+    <?php endfor; ?>
 </section>
 <section class="latest">
     <h2 class="latest__title">

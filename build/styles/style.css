@@ -447,6 +447,68 @@ header {
   background: black;
 }
 
+.engagement {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.engagement__title {
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+
+.engagement__desc {
+  width: 50%;
+  margin: 1.6em 0 3.75em 0;
+  font-family: "georgia", serif;
+  font-size: 1.375em;
+  font-style: italic;
+  line-height: 1.8666;
+}
+
+.engagement__infos:nth-of-type(n+2) {
+  margin-top: 6.25em;
+}
+
+.engagement__infos {
+  display: grid;
+  grid-template: 1fr/repeat(2, 1fr);
+  grid-column-gap: 10em;
+  align-items: center;
+}
+
+.engagement__info__title {
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 3.4375em;
+}
+
+.engagement__info__sub {
+  width: 85%;
+  margin-top: 2.13333333em;
+  font-family: "open sans", sans-serif;
+  font-size: 0.9375em;
+  line-height: 1.8666;
+}
+
+.engagement__infos:nth-child(odd) .engagement__info__sub, .engagement__infos:nth-child(odd) .engagement__info__title {
+  margin-left: 15%;
+}
+
+.engagement__info__image {
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+
+.engagement__infos:nth-child(odd) .engagement__info__image {
+  grid-area: 1/2/-1/-1;
+  justify-self: end;
+}
+
+.engagement__infos:nth-child(even) .engagement__info__image {
+  grid-area: 1/1/-1/2;
+}
+
 .btn__share {
   padding: 0.7em 1.4em;
   font-family: "bebas neue pro", sans-serif;
