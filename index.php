@@ -205,11 +205,11 @@
     <?php endfor; ?>
 </section>
 <section class="projects__images">
-    <h2 class="projects__images__title">
+    <h2 class="projects__images__title hidden">
         Images des projets
     </h2>
     <?php for ($i=0; $i<count($pictures['src']); $i++): ?>
-    <img src="<?= $pictures['src'][$i] ?>" alt="<?= $pictures['alt'][$i] ?>">
+    <img class="projects__images__image" src="<?= $pictures['src'][$i] ?>" alt="<?= $pictures['alt'][$i] ?>">
     <?php endfor; ?>
 </section>
 <section class="latest">

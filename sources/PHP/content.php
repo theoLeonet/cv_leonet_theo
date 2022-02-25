@@ -154,11 +154,13 @@ $engagement = [
 ];
 $pictures = [
     'src' => [
-        '/images/forest.jpg',
-        '/images/forest.jpg',
-        '/images/forest.jpg',
+        'sources/images/forest.jpg',
+        'sources/images/forest.jpg',
+        'sources/images/forest.jpg',
+        'sources/images/forest.jpg',
     ],
     'alt' => [
+        'forest.jpg',
         'forest.jpg',
         'forest.jpg',
         'forest.jpg',

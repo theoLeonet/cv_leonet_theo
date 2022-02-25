@@ -1,0 +1,30 @@
+.projects__images{
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 627.5fr) repeat(2, 491fr);
+  margin-top: 6.25em; //100/16
+}
+
+.projects__images__image{
+  width: 100%;
+}
+
+.projects__images__image:nth-child(2){
+  grid-area: 1/1/-1/3;
+  width: 100%;
+  aspect-ratio: 1.31276151/1;
+}
+
+.projects__images__image:nth-child(3){
+  grid-area: 1/3/2/4;
+  aspect-ratio: 1.027196653/1;
+}
+
+.projects__images__image:nth-child(4){
+  grid-area: 1/4/2/5;
+  aspect-ratio: 1.02719665/1;
+}
+
+.projects__images__image:nth-child(5){
+  grid-area: 2/3/3/5;
+  aspect-ratio: 2.08/1;
+}
