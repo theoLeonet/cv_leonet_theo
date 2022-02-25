@@ -275,22 +275,30 @@
     </div>
 </section>
 <section class="wdf__infos">
-    <h2 class="wdf__title">
-        WDF
-    </h2>
-    <p class="wdf__sub">
-        La WDF crée chaque jour de nouvelles vocations dans le monde du web. Formations, conseils, inspiration, vous trouverez forcément quelque chose qui vous convient.
-    </p>
-    <section class="wdf__numbers">
-        <h3 class="wdf__numbers__title">
+    <div class="wdf__intro">
+        <h2 class="wdf__title">
+            WDF
+        </h2>
+        <p class="wdf__sub">
+            La WDF crée chaque jour de nouvelles vocations dans le monde du web. Formations, conseils, inspiration, vous trouverez forcément quelque chose qui vous convient.
+        </p>
+    </div>
+    <aside class="wdf__numbers">
+        <h3 class="numbers__title">
             LE WDF EN QUELQUES CHIFFRES C’EST
         </h3>
-        <?php for ($i=0; $i<count($wdf__infos['numbers']); $i++): ?>
-        <p class="wdf__numbers__info">
-            <span><?= $wdf__infos['numbers'][$i] ?></span><?= $wdf__infos['texts'][$i] ?>
-        </p>
-        <?php endfor; ?>
-    </section>
+            <?php for ($i=0; $i<count($wdf__infos['numbers']); $i++): ?>
+            <div class="numbers__infos">
+                <p class="numbers__number">
+                    <?= $wdf__infos['numbers'][$i] ?>
+                </p>
+                <p class="numbers__text">
+                    <?= $wdf__infos['texts'][$i] ?>
+                </p>
+            </div>
+            <?php endfor; ?>
+
+    </aside>
 </section>
 <section class="useful">
     <h2 class="useful__title">

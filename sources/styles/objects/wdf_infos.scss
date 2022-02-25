@@ -1,0 +1,67 @@
+.wdf__infos{
+  display: flex;
+  margin: 8.75em 0 0 23%; //140/16
+}
+
+.wdf__intro{
+  display: flex;
+  flex: 0;
+  flex-basis: 35%;
+
+  border-bottom: 1px solid $light_gray_text;
+}
+
+.wdf__title{
+  height: 5.875em; //94/16
+  width: 5.25em; //84/16
+
+  text-indent: -9999em;
+
+  background: url("/sources/images/wdf_logo.svg") no-repeat center;
+}
+
+.wdf__sub{
+  width: 70%;
+  margin-left: 4.09090909em; //90/22
+
+  font-family: "georgia", sans-serif;
+  font-size: 1.375em; //22/16
+  font-style: italic;
+  line-height: 1.8666;
+}
+
+.wdf__numbers{
+  flex: 1;
+  display: grid;
+  column-gap: 4.5em; //72/16
+  grid-template: repeat(2, max-content)/repeat(3, 9.375em); //150/16
+  padding: 3em 0 3em 3em; //48/16
+  margin-left: 7.5em; //120/16
+
+  background: $orange;
+  color: white;
+}
+
+.numbers__title{
+  grid-area: 1/1/2/-1;
+
+  font-family: "open sans", sans-serif;
+  font-size: 0.6875em; //11/16
+  font-weight: bold;
+  letter-spacing: 0.0625em; //1/16
+}
+
+.numbers__infos{
+  margin-top: 1.25em; //20/16
+}
+
+.numbers__text{
+  font-family: "georgia", sans-serif;
+  font-size: 0.75em; //12/16
+}
+
+.numbers__number{
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 3.4375em; //55/16
+  font-weight: bold;
+}

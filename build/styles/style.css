@@ -734,6 +734,68 @@ header {
   background: #f07f00;
 }
 
+.wdf__infos {
+  display: flex;
+  margin: 8.75em 0 0 23%;
+}
+
+.wdf__intro {
+  display: flex;
+  flex: 0;
+  flex-basis: 35%;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.wdf__title {
+  height: 5.875em;
+  width: 5.25em;
+  text-indent: -9999em;
+  background: url("/sources/images/wdf_logo.svg") no-repeat center;
+}
+
+.wdf__sub {
+  width: 70%;
+  margin-left: 4.09090909em;
+  font-family: "georgia", sans-serif;
+  font-size: 1.375em;
+  font-style: italic;
+  line-height: 1.8666;
+}
+
+.wdf__numbers {
+  flex: 1;
+  display: grid;
+  column-gap: 4.5em;
+  grid-template: repeat(2, max-content)/repeat(3, 9.375em);
+  padding: 3em 0 3em 3em;
+  margin-left: 7.5em;
+  background: #f07f00;
+  color: white;
+}
+
+.numbers__title {
+  grid-area: 1/1/2/-1;
+  font-family: "open sans", sans-serif;
+  font-size: 0.6875em;
+  font-weight: bold;
+  letter-spacing: 0.0625em;
+}
+
+.numbers__infos {
+  margin-top: 1.25em;
+}
+
+.numbers__text {
+  font-family: "georgia", sans-serif;
+  font-size: 0.75em;
+}
+
+.numbers__number {
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 3.4375em;
+  font-weight: bold;
+}
+
 .btn__share {
   padding: 0.7em 1.4em;
   font-family: "bebas neue pro", sans-serif;
