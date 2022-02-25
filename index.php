@@ -216,20 +216,22 @@
     <h2 class="latest__title">
         À LA UNE
     </h2>
-    <?php for ($i=0; $i<count($latest['titles']); $i++): ?>
-    <article class="latest__article">
-        <h3 class="latest__article__title">
-            <?= $latest['titles'][$i] ?>
-        </h3>
-        <img src="<?= $latest['images__src'][$i] ?>" alt="<?= $latest['images__alt'][$i] ?>" class="latest__article__image">
-        <p class="latest__article__sub">
-            <?= $latest['subtitles'][$i] ?>
-        </p>
-        <p class="latest__article__date">
-            <?= $latest['dates'][$i] ?>
-        </p>
-    </article>
-    <?php endfor; ?>
+    <div class="latest__articles">
+        <?php for ($i=0; $i<count($latest['titles']); $i++): ?>
+            <article class="latest__article">
+                <h3 class="latest__article__title">
+                    <?= $latest['titles'][$i] ?>
+                </h3>
+                <img src="<?= $latest['images__src'][$i] ?>" alt="<?= $latest['images__alt'][$i] ?>" class="latest__article__image">
+                <p class="latest__article__sub">
+                    <?= $latest['subtitles'][$i] ?>
+                </p>
+                <p class="latest__article__date">
+                    <?= $latest['dates'][$i] ?>
+                </p>
+            </article>
+        <?php endfor; ?>
+    </div>
     <a href="#" class="latest__all">
         Toutes les actualités.
     </a>

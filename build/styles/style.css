@@ -540,6 +540,77 @@ header {
   aspect-ratio: 2.08/1;
 }
 
+.latest {
+  width: clamp(900px, 85%, 1200px);
+  padding: 0 calc((100% - clamp(900px, 85%, 1200px)) / 2);
+  background: black;
+  color: white;
+}
+
+.latest__title {
+  padding-top: 4em;
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 1.375em;
+}
+
+.latest__articles {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2em;
+  margin-top: 5em;
+}
+
+.latest__article {
+  display: grid;
+  grid-template: repeat(3, max-content)/repeat(2, 1fr);
+  width: clamp(100px, 100%, 373px);
+}
+
+.latest__article__image {
+  order: 0;
+  width: 100%;
+  grid-area: 1/1/2/-1;
+  margin-bottom: 1.25em;
+}
+
+.latest__article__title {
+  order: 3;
+  grid-area: 3/1/-1/-1;
+  margin-top: 2em;
+  font-family: "open sans", sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.latest__article__sub {
+  order: 1;
+  font-family: "open sans", sans-serif;
+  font-size: 0.6875em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.latest__article__date {
+  order: 2;
+  justify-self: right;
+  font-family: "georgia", sans-serif;
+  font-size: 0.875em;
+  font-style: italic;
+  color: #E6E6E6;
+}
+
+.latest__all {
+  display: block;
+  margin-top: 8em;
+  padding-bottom: 8em;
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: end;
+  text-transform: uppercase;
+}
+
 .btn__share {
   padding: 0.7em 1.4em;
   font-family: "bebas neue pro", sans-serif;

@@ -170,20 +170,25 @@ $latest = [
     'titles' => [
         'Developpeur front-end, un métier en pénurie',
         'Comment bien utiliser CSS grid layout',
+        'Comment bien utiliser CSS grid layout',
     ],
     'subtitles' => [
+        'Acutalités',
         'Acutalités',
         'Acutalités',
     ],
     'dates' => [
         '10.08.2021 - 10:27',
         '10.08.2021 - 10:27',
+        '10.08.2021 - 10:27',
     ],
     'images__src' => [
-        '/images/forest.jpg',
-        '/images/forest.jpg',
+        'sources/images/forest.jpg',
+        'sources/images/forest.jpg',
+        'sources/images/forest.jpg',
     ],
     'images__alt' => [
+        'forest.jpg',
         'forest.jpg',
         'forest.jpg',
     ],

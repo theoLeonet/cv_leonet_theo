@@ -1,0 +1,77 @@
+.latest{
+  width: clamp(900px, 85%, 1200px);
+  padding: 0 calc((100% - clamp(900px, 85%, 1200px))/2);
+
+  background: black;
+  color: white;
+}
+
+.latest__title{
+  padding-top: 4em; //64/16
+
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 1.375em; //22/16
+}
+
+.latest__articles{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2em;
+  margin-top: 5em; //80/16
+}
+
+.latest__article{
+  display: grid;
+  grid-template: repeat(3, max-content) /repeat(2, 1fr);
+  width: clamp(100px, 100%, 373px);
+}
+
+.latest__article__image{
+  order: 0;
+  width: 100%;
+  grid-area: 1/1/2/-1;
+  margin-bottom: 1.25em; //20/16
+}
+
+.latest__article__title{
+  order: 3;
+  grid-area: 3/1/-1/-1;
+  margin-top: 2em; //40/20
+
+  font-family: "open sans", sans-serif;
+  font-size: 1.25em; //20/16
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.latest__article__sub{
+  order: 1;
+
+  font-family: "open sans", sans-serif;
+  font-size: 0.6875em; //11/16
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.latest__article__date{
+  order: 2;
+  justify-self: right;
+
+  font-family: "georgia", sans-serif;
+  font-size: 0.875em; //14/16
+  font-style: italic;
+
+  color: $light_gray_text;
+}
+
+.latest__all{
+  display: block;
+  margin-top: 8em; //160/20
+  padding-bottom: 8em; //160/20
+
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 1.25em; //20/16
+  font-weight: bold;
+  text-align: end;
+  text-transform: uppercase;
+}
