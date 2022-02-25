@@ -237,27 +237,29 @@
     </a>
 </section>
 <section class="newsletter">
-    <h2 class="newsletter__title">
-        Restez à la pointe de l’actualité sur le développement web
-    </h2>
-    <div class="newsletter__sub-btn">
-        <a href="#">
-            Je m’abonne à la Newsletter
-        </a>
-    </div>
-    <p class="newsletter__socials__intro">
-        Retrouvez aussi toute l’actualité du WDF sur :
-    </p>
-    <ul class="newsletter__socials">
-        <?php for ($i=0; $i<count($newsletter['socials']['links']); $i++): ?>
-        <li>
-            <a href="<?= $newsletter['socials']['links'][$i] ?>">
-                <?= $newsletter['socials']['texts'][$i] ?>
+    <div class="newsletter__texts">
+        <h2 class="newsletter__title">
+            Restez à <span class="newsletter__title--highlight"> la pointe de l’actualité </span> sur le développement web
+        </h2>
+        <div class="newsletter__sub-btn">
+            <a href="#">
+                Je m’abonne à la Newsletter
             </a>
-        </li>
-        <?php endfor; ?>
-    </ul>
-    <img src="" alt="">
+        </div>
+        <p class="newsletter__socials__intro">
+            Retrouvez aussi toute l’actualité du WDF sur :
+        </p>
+        <ul class="newsletter__socials">
+            <?php for ($i=0; $i<count($newsletter['socials']['links']); $i++): ?>
+                <li class="newsletter__socials__social <?= $newsletter['socials']['texts'][$i] ?>">
+                    <a href="<?= $newsletter['socials']['links'][$i] ?>">
+                        <?= $newsletter['socials']['texts'][$i] ?>
+                    </a>
+                </li>
+            <?php endfor; ?>
+        </ul>
+    </div>
+    <img class="newsletter__image" src="./sources/images/forest.jpg" alt="forest">
 </section>
 <section class="inscription">
     <h2 class="inscription__title">

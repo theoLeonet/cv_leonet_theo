@@ -1,0 +1,90 @@
+.newsletter{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60%;
+  padding: 4em 18% 2.75em; //64/16 44/16
+  margin: 2.75em auto; //44/16
+
+  background: $light_gray_bg;
+}
+
+.newsletter__texts{
+  width: 80%;
+  justify-self: end;
+}
+
+.newsletter__title{
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 3.4375em; //55/16
+  font-weight: bold;
+}
+
+.newsletter__title--highlight{
+  color: $orange;
+}
+
+.newsletter__sub-btn{
+  width: max-content;
+  margin-top: 3.2em; //64/20
+  padding: .7em 1em;
+
+
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 1.25em; //20/16
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: white;
+  background: $orange;
+}
+
+.newsletter__socials__intro{
+  margin-top: 4.28571429em; //60/14
+
+  font-family: "georgia", sans-serif;
+  font-size: 0.875em; //14/16
+}
+
+.newsletter__socials{
+  display: flex;
+  margin-top: 1.25em; //20/16
+  gap: .5em;
+}
+
+.Facebook{
+  background: url("/sources/images/facebook_logo.svg") no-repeat;
+}
+.Twitter{
+  background: url("/sources/images/twitter_logo.svg") no-repeat;
+}
+.Instagram{
+  background: url("/sources/images/instagram_logo.svg") no-repeat;
+}
+.Youtube{
+  background: url("/sources/images/youtube_logo.svg") no-repeat;
+}
+.Linkedin{
+  background: url("/sources/images/linkedin_logo.svg") no-repeat;
+}
+
+.newsletter__socials__social{
+  display: inline;
+  align-self: center;
+  width: 2.3em; //32/16
+  aspect-ratio: 1/1;
+  overflow: hidden;
+
+  color: transparent;
+  background-position: center;
+  background-size: .9em .9em;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.newsletter__image{
+  margin-top: -64px;
+  width: 317px;
+  aspect-ratio: 1/1.35646687697;
+  grid-area: 1/2/-1/-1;
+  justify-self: center;
+}
