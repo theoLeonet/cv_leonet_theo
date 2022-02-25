@@ -1,0 +1,39 @@
+.subscribe{
+  padding: 16.25em 0 8.5em; //260/16 136/16
+
+  text-align: center;
+
+  background: url("/sources/images/forest.jpg");
+  color: white;
+}
+
+.subscribe__title{
+  width: 20%;
+  margin: 0 auto;
+
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 3.4375em; //55/16
+  font-weight: bold;
+}
+
+.subscribe__text{
+  width: 25%;
+  margin: 2em auto; //32/16
+
+  font-family: "open sans", sans-serif;
+  font-size: 0.9375em; //15/16
+  line-height: 1.8666;
+}
+
+.subscribe__btn{
+  width: max-content;
+  margin: 0 auto;
+  padding: .5em 1em;
+  margin-top: 3em; //90/30
+
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 1.875em; //30/16
+  text-transform: uppercase;
+
+  background: $orange;
+}

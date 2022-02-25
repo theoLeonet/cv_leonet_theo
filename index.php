@@ -261,16 +261,16 @@
     </div>
     <img class="newsletter__image" src="./sources/images/forest.jpg" alt="forest">
 </section>
-<section class="inscription">
-    <h2 class="inscription__title">
+<section class="subscribe">
+    <h2 class="subscribe__title">
         Comment puis-je faire la différence ?
     </h2>
-    <p class="inscription__text">
+    <p class="subscribe__text">
         C’est en suivant une ou plusieurs de nos nombreuses formations que vous pourrez faire la différence. Grâce à vous les métiers du web pourraient cesser d’être en pénurie. Vous pourriez vous même devenir conseiller WDF et aider des centaines de personnes à rejoindre le mouvement.
     </p>
-    <div class="inscription__btn">
+    <div class="subscribe__btn">
         <a href="#">
-            INSCRIVEZ VOUS !
+            Inscrivez-vous !
         </a>
     </div>
 </section>
