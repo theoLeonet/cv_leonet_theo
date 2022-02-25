@@ -1,0 +1,52 @@
+.footer{
+  background: $light_gray_bg;
+  width: 50%;
+  padding: 3.1875em 25% 1em; //51/16
+}
+
+.footer__main{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__links{
+  display: flex;
+  gap: 4.28571429em; //60/14
+
+  font-family: "georgia", sans-serif;
+  font-size: 0.875em; //14/16
+}
+
+.footer__logos{
+  display: flex;
+  gap: 1em;
+}
+
+.footer__logo{
+  width: 16px;
+  overflow: hidden;
+}
+
+.footer__infos{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5em; //40/16
+
+  font-family: "open sans", sans-serif;
+  font-size: 0.8125em; //13/16
+
+  color: $gray_text;
+}
+
+.footer__language{
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 0.875em; //14/16
+  &:after{
+    content:'';
+    display:inline-block;
+    border-top: 0.333em solid;
+    border-right: 0.3333em solid transparent;
+    border-left: 0.3333em solid transparent;
+    vertical-align:  0.2833em;
+  }
+}

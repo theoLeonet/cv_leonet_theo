@@ -49,25 +49,27 @@
   display: flex;
   margin-top: 1.25em; //20/16
   gap: .5em;
+
 }
 
-.Facebook{
-  background: url("/sources/images/facebook_logo.svg") no-repeat;
-}
-.Twitter{
-  background: url("/sources/images/twitter_logo.svg") no-repeat;
-}
-.Instagram{
-  background: url("/sources/images/instagram_logo.svg") no-repeat;
-}
-.Youtube{
-  background: url("/sources/images/youtube_logo.svg") no-repeat;
-}
-.Linkedin{
-  background: url("/sources/images/linkedin_logo.svg") no-repeat;
-}
 
 .newsletter__socials__social{
+  .Facebook{
+    background: url("/sources/images/facebook_logo.svg") no-repeat;
+  }
+  .Twitter{
+    background: url("/sources/images/twitter_logo.svg") no-repeat;
+  }
+  .Instagram{
+    background: url("/sources/images/instagram_logo.svg") no-repeat;
+  }
+  .Youtube{
+    background: url("/sources/images/youtube_logo.svg") no-repeat;
+  }
+  .Linkedin{
+    background: url("/sources/images/linkedin_logo.svg") no-repeat;
+  }
+
   display: inline;
   align-self: center;
   width: 2.3em; //32/16

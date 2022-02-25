@@ -328,35 +328,39 @@
         </ul>
     </div>
 </section>
-<footer>
-    <ul class="footer__links">
-        <?php for ($i=0; $i<count($footer['links']); $i++): ?>
-        <li class="footer__link">
-            <a href="<?= $footer['links'][$i] ?>">
-                <?= $footer['texts'][$i] ?>
-            </a>
-        </li>
-        <?php endfor; ?>
-    </ul>
-    <ul class="footer__logos">
-        <?php for ($i=0; $i<count($footer['logos']['links']); $i++): ?>
-        <li class="footer__logo">
-            <a href="<?= $footer['logos']['links'][$i] ?>">
-                <img src="<?= $footer['logos']['images__src'][$i] ?>" alt="<?= $footer['logos']['images__alt'][$i] ?>">
-            </a>
-        </li>
-        <?php endfor; ?>
-    </ul>
-    <a href="#">
-        Langage
-    </a>
-    <ul class="footer__infos">
-        <?php for ($i=0; $i<count($footer['infos']['texts']); $i++): ?>
-        <li class="footer__info">
-            <?= $footer['infos']['texts'][$i] ?>
-        </li>
-        <?php endfor; ?>
-    </ul>
+<footer class="footer">
+    <section class="footer__main">
+        <ul class="footer__links">
+            <?php for ($i=0; $i<count($footer['links']); $i++): ?>
+                <li class="footer__link">
+                    <a href="<?= $footer['links'][$i] ?>">
+                        <?= $footer['texts'][$i] ?>
+                    </a>
+                </li>
+            <?php endfor; ?>
+        </ul>
+        <ul class="footer__logos">
+            <?php for ($i=0; $i<count($footer['logos']['links']); $i++): ?>
+                <li class="footer__logo">
+                    <a href="<?= $footer['logos']['links'][$i] ?>">
+                        <img src="<?= $footer['logos']['images__src'][$i] ?>" alt="<?= $footer['logos']['images__alt'][$i] ?>">
+                    </a>
+                </li>
+            <?php endfor; ?>
+        </ul>
+        <a class="footer__language" href="#">
+            FR
+        </a>
+    </section>
+    <section class="footer__sec">
+        <ul class="footer__infos">
+            <?php for ($i=0; $i<count($footer['infos']['texts']); $i++): ?>
+                <li class="footer__info">
+                    <?= $footer['infos']['texts'][$i] ?>
+                </li>
+            <?php endfor; ?>
+        </ul>
+    </section>
 </footer>
 <script src="build/scripts/main.js"></script>
 </body>
