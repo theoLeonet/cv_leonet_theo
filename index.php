@@ -301,7 +301,7 @@
     </aside>
 </section>
 <section class="useful">
-    <h2 class="useful__title">
+    <h2 class="useful__title hidden">
         Liens utiles
     </h2>
     <ul class="useful__links">
@@ -313,18 +313,20 @@
         </li>
         <?php endfor; ?>
     </ul>
-    <p class="useful__follow">
-        Nous suivre
-    </p>
-    <ul class="useful__follow__links">
-        <?php for ($i=0; $i<count($useful['socials']['links']); $i++): ?>
-        <li class="useful__follow__link">
-            <a href="<?= $useful['socials']['links'][$i] ?>">
-                <?= $useful['socials']['texts'][$i] ?>
-            </a>
-        </li>
-        <?php endfor; ?>
-    </ul>
+    <div class="useful__follow">
+        <p class="useful__follow__intro">
+            Nous suivre
+        </p>
+        <ul class="useful__follow__links">
+            <?php for ($i=0; $i<count($useful['socials']['links']); $i++): ?>
+                <li class="useful__follow__link <?= $useful['socials']['texts'][$i] ?>">
+                    <a href="<?= $useful['socials']['links'][$i] ?>">
+                        <?= $useful['socials']['texts'][$i] ?>
+                    </a>
+                </li>
+            <?php endfor; ?>
+        </ul>
+    </div>
 </section>
 <footer>
     <ul class="footer__links">

@@ -1,0 +1,71 @@
+.useful{
+  margin: 5.625em 0 0 23%; //90/16
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 70px;
+}
+.useful__links{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px 60px;
+  order: -1;
+  max-height: 8em; //128/16
+  max-width: max-content;
+
+  font-family: "open sans", sans-serif;
+  font-weight: bold;
+}
+
+.useful__link:nth-last-child(-n + 5){
+  font-weight: normal;
+
+  color: $orange;
+}
+
+.useful__link:nth-last-child(6){
+  margin-bottom: 0.0625em; //1/16
+}
+
+.useful__follow__intro{
+  font-family: "georgia", sans-serif;
+  font-size: 0.75em; //12/16
+}
+
+.useful__follow__links{
+  width: max-content;
+  display: flex;
+  gap: 0 1em;
+  padding-bottom: 2.1875em; //35/16
+
+  border-bottom: 1px solid $light_gray_text;
+}
+
+.Facebook{
+  background: url("/sources/images/facebook_logo.svg") no-repeat;
+}
+.Twitter{
+  background: url("/sources/images/twitter_logo.svg") no-repeat;
+}
+.Instagram{
+  background: url("/sources/images/instagram_logo.svg") no-repeat;
+}
+.Youtube{
+  background: url("/sources/images/youtube_logo.svg") no-repeat;
+}
+.Linkedin{
+  background: url("/sources/images/linkedin_logo.svg") no-repeat;
+}
+
+.useful__follow__link{
+  display: inline;
+  align-self: center;
+  width: 1em;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin: 1em 0;
+
+  color: transparent;
+  background-position: center;
+  background-size: contain;
+}
