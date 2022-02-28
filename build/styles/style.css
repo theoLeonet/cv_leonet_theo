@@ -538,7 +538,6 @@ header {
 }
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2.5em;
   width: 85%;
   margin: 4.375em auto;
@@ -551,8 +550,6 @@ header {
 }
 
 .projects__sub {
-  grid-column: 1/2;
-  width: 85%;
   font-family: "open sans", sans-serif;
   font-size: 0.9375em;
   line-height: 1.866;
@@ -561,18 +558,6 @@ header {
 .projects__project {
   display: flex;
   flex-direction: column;
-}
-
-.projects__project:nth-child(odd) {
-  grid-column: 1/2;
-}
-
-.projects__project:nth-child(even) {
-  grid-column: 2/3;
-}
-
-.projects__project:nth-child(n+5) {
-  margin-top: 6em;
 }
 
 .project__image {
@@ -585,12 +570,34 @@ header {
   padding: 1em 1.5em;
   margin: -1.5em 0 0;
   font-family: "bebas neue pro", sans-serif;
-  font-size: 1.875em;
+  font-size: clamp(1.125em, 5.625vw, 1.875em);
   text-transform: uppercase;
   color: white;
   background: black;
 }
 
+@media screen and (min-width: 1021px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects__sub {
+    grid-column: 1/-1;
+    width: clamp(200px, 85vw, 600px);
+  }
+
+  .projects__project:nth-child(odd) {
+    grid-column: 1/2;
+  }
+
+  .projects__project:nth-child(even) {
+    grid-column: 2/3;
+  }
+
+  .projects__project:nth-child(n+5) {
+    margin-top: 6em;
+  }
+}
 .engagement {
   width: 85%;
   margin: 0 auto;

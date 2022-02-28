@@ -1,6 +1,5 @@
 .projects{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2.5em; //40/16
   width: 85%;
   margin: 4.375em auto; //70/16
@@ -13,9 +12,6 @@
 }
 
 .projects__sub{
-  grid-column: 1/2;
-  width: 85%;
-
   font-family: "open sans", sans-serif;
   font-size: 0.9375em; //15/16
   line-height: 1.866;
@@ -24,18 +20,6 @@
 .projects__project{
   display: flex;
   flex-direction: column;
-}
-
-.projects__project:nth-child(odd){
-  grid-column: 1/2;
-}
-
-.projects__project:nth-child(even){
-  grid-column: 2/3;
-}
-
-.projects__project:nth-child(n+5){
-  margin-top: 6em; //96/16
 }
 
 .project__image{
@@ -49,9 +33,32 @@
   margin: -1.5em 0 0;
 
   font-family: "bebas neue pro", sans-serif;
-  font-size: 1.875em; //30/16
+  font-size: clamp(1.125em, 5.625vw ,1.875em); //18/16  30/16
   text-transform: uppercase;
 
   color: white;
   background: black;
+}
+
+@media screen and (min-width: 1021px) {
+  .projects{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects__sub{
+    grid-column: 1/-1;
+    width: clamp(200px, 85vw, 600px);
+  }
+
+  .projects__project:nth-child(odd){
+    grid-column: 1/2;
+  }
+
+  .projects__project:nth-child(even){
+    grid-column: 2/3;
+  }
+
+  .projects__project:nth-child(n+5){
+    margin-top: 6em; //96/16
+  }
 }
