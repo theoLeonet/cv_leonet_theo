@@ -311,7 +311,7 @@ header {
   }
 }
 .intro {
-  width: 85%;
+  width: 85vw;
   margin: 17.5em auto 0;
   color: white;
 }
@@ -324,34 +324,34 @@ header {
 }
 
 .intro__sub {
-  width: 3.75em;
+  width: clamp(0em, 100%, 3.75em);
   font-family: "bebas neue pro", sans-serif;
-  font-size: 5em;
+  font-size: clamp(3em, 15vw, 5em);
   text-transform: Uppercase;
   line-height: 1.2;
   margin-top: 0.25em;
 }
 
 .intro__description {
-  width: clamp(300px, 50%, 700px);
-  margin: 11em clamp(0px, 100% - 300px, 100px) 0;
+  width: clamp(256px, 80vw, 430px);
+  margin: clamp(4.22727273em, 29.0625vw, 11em) clamp(0px, 100% - clamp(300px, 93.75%, 10000px), 100px) 0;
   font-family: "georgia", serif;
-  font-size: 1.375em;
+  font-size: clamp(1em, 5vw, 1.375em);
   font-style: italic;
   line-height: 1.8666;
 }
 
 .intro__info__title {
-  margin: 1.33333333em clamp(0px, 100% - 300px, 100px) 0;
+  margin: 1.33333333em clamp(0px, 100% - clamp(300px, 93.75%, 10000px), 100px) 0;
   font-family: "bebas neue pro", sans-serif;
-  font-size: 9.375em;
+  font-size: clamp(5.375em, 26.875vw, 9.375em);
 }
 
 .intro__info__sub {
-  width: clamp(300px, 50%, 400px);
-  margin: 1.11111111em clamp(0px, 100% - 300px, 100px) 0;
+  width: clamp(256px, 80vw, 430px);
+  margin: 1.11111111em clamp(0px, 100% - clamp(300px, 93.75%, 10000px), 100px) 0;
   font-family: "open sans", sans-serif;
-  font-size: 1.125em;
+  font-size: clamp(0.875em, 4.375vw, 1.125em);
   line-height: 1.8666;
 }
 
