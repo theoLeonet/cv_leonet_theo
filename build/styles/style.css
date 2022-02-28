@@ -465,19 +465,18 @@ header {
 .did-you-know__slider {
   display: flex;
   overflow: hidden;
-  max-width: 50vw;
+  max-width: clamp(18.75em, 50vw, 10000em);
   margin: 0 auto;
 }
 
 .did-you-know__slide {
-  min-width: 50vw;
-  min-height: 20vw;
+  min-width: clamp(18.75em, 50vw, 10000em);
+  padding: clamp(1.875em, 10vw, 3.75em) 0;
   text-align: center;
   background: #c4bc8e;
 }
 
 .slide__title {
-  margin-top: 5em;
   font-family: "open sans", sans-serif;
   font-size: 0.75em;
   font-weight: bold;
@@ -492,7 +491,7 @@ header {
 }
 
 .slide__text {
-  width: 50%;
+  width: clamp(13.33333333em, 80%, 33.33333333em);
   margin: 2.66666667em auto 0;
   font-family: "open sans", sans-serif;
   font-size: 0.9375em;
@@ -504,33 +503,39 @@ header {
   margin: 3.75em auto 0;
 }
 
-.left-arrow__btn, .right-arrow__btn {
-  position: absolute;
-  display: flex;
-  width: 80px;
-  aspect-ratio: 1/1;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-}
-
-.left-arrow__btn {
-  top: calc(50% - 110px);
-  left: calc(25% - 40px);
-}
-
-.right-arrow__btn {
-  top: calc(50% - 110px);
-  right: calc(25% - 40px);
-}
-
 .slider__dots {
   display: block;
   margin: 2.5em auto;
 }
 
+@media screen and (max-width: 1200px) {
+  .left-arrow__btn, .right-arrow__btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .left-arrow__btn, .right-arrow__btn {
+    position: absolute;
+    display: flex;
+    width: 5em;
+    aspect-ratio: 1/1;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-arrow__btn {
+    top: calc(50% - 6.875em);
+    left: calc(25% - 2.5em);
+  }
+
+  .right-arrow__btn {
+    top: calc(50% - 6.875em);
+    right: calc(25% - 2.5em);
+  }
+}
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
