@@ -10,7 +10,7 @@
 }
 
 .engagement__desc{
-  width: clamp(272px, 85%, 600px);
+  width: clamp(12.36363636em, 85%, 27.27272727em); //272/22 600/22
   margin: 1.6em 0 3.75em 0; //32/20 75/20
 
   font-family: "georgia", serif;
@@ -44,8 +44,6 @@
 }
 
 @media screen and (min-width: 1281px){
-
-
   .engagement__infos{
     grid-template: 1fr / repeat(2, 1fr);
     grid-column-gap: 10em;
@@ -73,13 +71,13 @@
 
 @media screen and (max-width: 1280px){
   .engagement__infos{
-    gap: 30px;
+    gap: 1.875em; //30/16
   }
 
   .engagement__info__texts{
     display: grid;
     width: 75%;
-    gap: 15px;
+    gap: 0.9375em; //15/16
   }
 
   .engagement__info__image{

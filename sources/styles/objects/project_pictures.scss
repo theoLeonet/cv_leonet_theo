@@ -1,29 +1,34 @@
 .projects__images{
   display: grid;
-  grid-template: repeat(2, 1fr)/repeat(2, 628.315fr) repeat(2, 491.68fr);
   margin-top: 6.25em; //100/16
 }
 
-.projects__images__image{
+.projects__images__image {
   width: 100%;
 }
 
-.projects__images__image:nth-child(2){
-  grid-area: 1/1/-1/3;
-  aspect-ratio: 419/319;
-}
+@media screen and (min-width: 801px) {
+  .projects__images {
+    grid-template: repeat(2, 1fr)/repeat(2, 628.315fr) repeat(2, 491.68fr);
+  }
 
-.projects__images__image:nth-child(3){
-  grid-area: 1/3/2/4;
-  height: 100%;
-}
+  .projects__images__image:nth-child(2) {
+    grid-area: 1/1/-1/3;
+    aspect-ratio: 419/319;
+  }
 
-.projects__images__image:nth-child(4){
-  grid-area: 1/4/2/5;
-  height: 100%;
-}
+  .projects__images__image:nth-child(3) {
+    grid-area: 1/3/2/4;
+    height: 100%;
+  }
 
-.projects__images__image:nth-child(5){
-  grid-area: 2/3/3/5;
-  aspect-ratio: 983/478;
+  .projects__images__image:nth-child(4) {
+    grid-area: 1/4/2/5;
+    height: 100%;
+  }
+
+  .projects__images__image:nth-child(5) {
+    grid-area: 2/3/3/5;
+    aspect-ratio: 983/478;
+  }
 }
