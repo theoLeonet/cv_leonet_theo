@@ -40,21 +40,14 @@ $main_nav = [
             'Projets',
             'Engagement',
             'À la une',
-        ],
-        'links' => [
-            '#',
-            '#',
-            '#',
-            '#',
-        ]
-    ],
-
-    'sec_menu' => [
-        'texts' => [
             'Formations',
             'À propos du WDF Belgique'
         ],
         'links' => [
+            '#',
+            '#',
+            '#',
+            '#',
             '#',
             '#',
         ]

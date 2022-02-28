@@ -14,71 +14,57 @@
     CV de Théo Léonet
 </h1>
 <header>
-        <h2 class="header__title">
-            WDF
-        </h2>
-        <nav class="sec-nav">
-            <h3 class="hidden">
-                Navigation secondaire
-            </h3>
-            <ul class="sec-nav__main-menu">
-                <?php for($i = 0; $i < count($sec_nav['main_menu']['links']); $i++): ?>
-                <li class="sec-nav__main-menu__link">
-                    <a href="<?= $sec_nav['main_menu']['links'][$i] ?>">
-                        <?= $sec_nav['main_menu']['texts'][$i] ?>
-                    </a>
-                </li>
-                <?php endfor; ?>
-            </ul>
-            <ul class="sec-nav__socials">
-                <li class="sec-nav__socials__follow">
-                    Nous suivre
-                </li>
-                <?php for($i = 0; $i < count($sec_nav['socials']['links']); $i++): ?>
-                <li class="sec-nav__socials__link <?= $sec_nav['socials']['texts'][$i] ?>">
-                    <a href="<?= $sec_nav['socials']['links'][$i] ?>">
-                        <?= $sec_nav['socials']['texts'][$i] ?>
-                    </a>
-                </li>
-                <?php endfor; ?>
-            </ul>
-            <ul class="sec-nav__sec-menu">
-                <li>
-                    <a href="#" class="sec-menu__newsletter">
-                        S'inscrire à la newsletter
-                    </a>
-                </li>
-                <li class="sec-menu__search">
-                    Recherche
-                </li>
-                <li class="sec-menu__language">
-                    Fr
-                </li>
-            </ul>
-        </nav>
-        <nav class="main-nav">
-            <h3 class="hidden">
-                Navigation principale
-            </h3>
-            <ul class="main-nav__main-menu">
-                <?php for($i = 0; $i < count($main_nav['main_menu']['links']); $i++): ?>
-                <li class="main-nav__main-menu__link">
-                    <a href="<?= $main_nav['main_menu']['links'][$i] ?>">
-                        <?= $main_nav['main_menu']['texts'][$i] ?>
-                    </a>
-                </li>
-                <?php endfor; ?>
-            </ul>
-            <ul class="main-nav__sec-menu">
-                <?php for($i = 0; $i < count($main_nav['sec_menu']['links']); $i++): ?>
-                <li class="main-nav__sec-menu__link">
-                    <a href="<?= $main_nav['sec_menu']['links'][$i] ?>">
-                        <?= $main_nav['sec_menu']['texts'][$i] ?>
-                    </a>
-                </li>
-                <?php endfor; ?>
-            </ul>
-        </nav>
+    <h2 class="header__title">
+        WDF
+    </h2>
+    <nav class="sec-nav">
+        <h3 class="hidden">
+            Navigation secondaire
+        </h3>
+        <ul class="sec-nav__main-menu">
+            <?php for($i = 0; $i < count($sec_nav['main_menu']['links']); $i++): ?><li class="sec-nav__main-menu__link">
+                <a href="<?= $sec_nav['main_menu']['links'][$i] ?>">
+                    <?= $sec_nav['main_menu']['texts'][$i] ?>
+                </a></li>
+            <?php endfor; ?>
+        </ul>
+        <ul class="sec-nav__socials">
+            <li class="sec-nav__socials__follow">
+                Nous suivre
+            </li>
+            <?php for($i = 0; $i < count($sec_nav['socials']['links']); $i++): ?><li class="sec-nav__socials__link <?= $sec_nav['socials']['texts'][$i] ?>">
+                <a href="<?= $sec_nav['socials']['links'][$i] ?>">
+                    <?= $sec_nav['socials']['texts'][$i] ?>
+                </a></li>
+            <?php endfor; ?>
+        </ul>
+        <ul class="sec-nav__sec-menu">
+            <li>
+                <a href="#" class="sec-menu__newsletter">
+                    S'inscrire à la newsletter
+                </a>
+            </li>
+            <li class="sec-menu__search">
+                Recherche
+            </li>
+            <li class="sec-menu__language">
+                Fr
+            </li>
+        </ul>
+    </nav>
+    <nav class="main-nav">
+        <h3 class="hidden">
+            Navigation principale
+        </h3>
+        <ul class="main-nav__main-menu">
+            <?php for($i = 0; $i < count($main_nav['main_menu']['links']); $i++): ?><li class="main-nav__main-menu__link">
+                <a href="<?= $main_nav['main_menu']['links'][$i] ?>">
+                    <?= $main_nav['main_menu']['texts'][$i] ?>
+                </a></li>
+            <?php endfor; ?>
+        </ul>
+    </nav>
+    <div class="burger-menu__icon"></div>
 </header>
 <video class="background__video" autoplay loop muted>
     <source src="sources/images/coding_blured.mp4" type="video/mp4">
@@ -349,7 +335,7 @@
             <?php endfor; ?>
         </ul>
         <a class="footer__language" href="#">
-            FR
+            <FR></FR>
         </a>
     </section>
     <section class="footer__sec">
