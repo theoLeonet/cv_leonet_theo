@@ -610,7 +610,7 @@ header {
 }
 
 .engagement__desc {
-  width: 50%;
+  width: clamp(272px, 85%, 600px);
   margin: 1.6em 0 3.75em 0;
   font-family: "georgia", serif;
   font-size: 1.375em;
@@ -618,15 +618,12 @@ header {
   line-height: 1.8666;
 }
 
-.engagement__infos:nth-of-type(n+2) {
-  margin-top: 6.25em;
-}
-
 .engagement__infos {
   display: grid;
-  grid-template: 1fr/repeat(2, 1fr);
-  grid-column-gap: 10em;
-  align-items: center;
+}
+
+.engagement__infos:nth-of-type(n+2) {
+  margin-top: 6.25em;
 }
 
 .engagement__info__title {
@@ -635,15 +632,9 @@ header {
 }
 
 .engagement__info__sub {
-  width: 85%;
-  margin-top: 2.13333333em;
   font-family: "open sans", sans-serif;
   font-size: 0.9375em;
   line-height: 1.8666;
-}
-
-.engagement__infos:nth-child(odd) .engagement__info__sub, .engagement__infos:nth-child(odd) .engagement__info__title {
-  margin-left: 15%;
 }
 
 .engagement__info__image {
@@ -651,15 +642,46 @@ header {
   aspect-ratio: 3/2;
 }
 
-.engagement__infos:nth-child(odd) .engagement__info__image {
-  grid-area: 1/2/-1/-1;
-  justify-self: end;
-}
+@media screen and (min-width: 1281px) {
+  .engagement__infos {
+    grid-template: 1fr/repeat(2, 1fr);
+    grid-column-gap: 10em;
+    align-items: center;
+  }
 
-.engagement__infos:nth-child(even) .engagement__info__image {
-  grid-area: 1/1/-1/2;
-}
+  .engagement__info__sub {
+    width: 85%;
+    margin-top: 2.13333333em;
+  }
 
+  .engagement__infos:nth-child(odd) .engagement__info__sub, .engagement__infos:nth-child(odd) .engagement__info__title {
+    margin-left: 15%;
+  }
+
+  .engagement__infos:nth-child(odd) .engagement__info__image {
+    grid-area: 1/2/-1/-1;
+    justify-self: end;
+  }
+
+  .engagement__infos:nth-child(even) .engagement__info__image {
+    grid-area: 1/1/-1/2;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .engagement__infos {
+    gap: 30px;
+  }
+
+  .engagement__info__texts {
+    display: grid;
+    width: 75%;
+    gap: 15px;
+  }
+
+  .engagement__info__image {
+    order: -1;
+  }
+}
 .projects__images {
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(2, 628.315fr) repeat(2, 491.68fr);
