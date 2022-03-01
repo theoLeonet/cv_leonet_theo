@@ -922,22 +922,22 @@ header {
   }
 }
 .subscribe {
-  padding: 16.25em 0 8.5em;
+  padding: clamp(3em, 15vw, 16.25em) 0 8.5em;
   text-align: center;
   background: url("/sources/images/forest.jpg");
   color: white;
 }
 
 .subscribe__title {
-  width: 20%;
+  width: clamp(272px, 20%, 1000px);
   margin: 0 auto;
   font-family: "bebas neue pro", sans-serif;
-  font-size: 3.4375em;
+  font-size: clamp(36px, 11.25vw, 3.4375em);
   font-weight: bold;
 }
 
 .subscribe__text {
-  width: 25%;
+  width: clamp(272px, 60%, 600px);
   margin: 2em auto;
   font-family: "open sans", sans-serif;
   font-size: 0.9375em;

@@ -1,5 +1,5 @@
 .subscribe{
-  padding: 16.25em 0 8.5em; //260/16 136/16
+  padding: clamp(3em, 15vw, 16.25em) 0 8.5em; //260/16 136/16
 
   text-align: center;
 
@@ -8,16 +8,16 @@
 }
 
 .subscribe__title{
-  width: 20%;
+  width: clamp(272px, 20%, 1000px);
   margin: 0 auto;
 
   font-family: "bebas neue pro", sans-serif;
-  font-size: 3.4375em; //55/16
+  font-size: clamp(36px , 11.25vw ,3.4375em); //55/16
   font-weight: bold;
 }
 
 .subscribe__text{
-  width: 25%;
+  width: clamp(272px, 60%, 600px);
   margin: 2em auto; //32/16
 
   font-family: "open sans", sans-serif;
