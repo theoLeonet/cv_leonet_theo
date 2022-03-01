@@ -955,18 +955,6 @@ header {
   background: #f07f00;
 }
 
-.wdf__infos {
-  display: flex;
-  margin: 8.75em 0 0 23%;
-}
-
-.wdf__intro {
-  display: flex;
-  flex: 0;
-  flex-basis: 35%;
-  border-bottom: 1px solid #E6E6E6;
-}
-
 .wdf__title {
   height: 5.875em;
   width: 5.25em;
@@ -975,8 +963,6 @@ header {
 }
 
 .wdf__sub {
-  width: 70%;
-  margin-left: 4.09090909em;
   font-family: "georgia", sans-serif;
   font-size: 1.375em;
   font-style: italic;
@@ -984,14 +970,9 @@ header {
 }
 
 .wdf__numbers {
-  flex: 1;
   display: grid;
-  column-gap: 4.5em;
-  grid-template: repeat(2, max-content)/repeat(3, 9.375em);
-  padding: 3em 0 3em 3em;
-  margin-left: 7.5em;
-  background: #f07f00;
-  color: white;
+  column-gap: clamp(0.3125em, 1vw, 4.5em);
+  grid-template: repeat(2, max-content)/repeat(3, clamp(0em, 33.333% - 5px, 9.375em));
 }
 
 .numbers__title {
@@ -1002,21 +983,85 @@ header {
   letter-spacing: 0.0625em;
 }
 
-.numbers__infos {
-  margin-top: 1.25em;
-}
-
 .numbers__text {
   font-family: "georgia", sans-serif;
-  font-size: 0.75em;
+  font-size: clamp(0.6875em, 3%, 0.75em);
 }
 
 .numbers__number {
   font-family: "bebas neue pro", sans-serif;
-  font-size: 3.4375em;
+  font-size: clamp(1em, 10vw, 3.4375em);
   font-weight: bold;
 }
 
+@media screen and (min-width: 1221px) {
+  .wdf__infos {
+    display: flex;
+    margin: 8.75em 0 0 clamp(50px, 100vw - 1470px, 450px);
+  }
+
+  .wdf__intro {
+    display: flex;
+    flex: 0;
+    border-bottom: 1px solid #E6E6E6;
+  }
+
+  .wdf__sub {
+    width: clamp(300px, 30vw, 500px);
+    margin-left: 4.09090909em;
+  }
+
+  .wdf__numbers {
+    flex: 1;
+    padding: 3em 0 3em 3em;
+    margin-left: clamp(1em, 6.25vw, 7.5em);
+    background: #f07f00;
+    color: white;
+  }
+
+  .numbers__infos {
+    margin-top: 1.25em;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .wdf__infos {
+    display: grid;
+    background: #f07f00;
+    color: white;
+    justify-items: center;
+  }
+
+  .wdf__intro {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .wdf__title {
+    background-color: white;
+    padding: 1em;
+    margin-bottom: 2.5em;
+  }
+
+  .wdf__sub {
+    width: clamp(272px, 50vw, 600px);
+  }
+
+  .wdf__numbers {
+    display: grid;
+    width: clamp(0px, 95vw, 400px);
+    text-align: center;
+    margin: 3em 0;
+  }
+
+  .numbers__title {
+    margin-bottom: 2.5em;
+  }
+
+  .numbers__text {
+    width: 100%;
+  }
+}
 .useful {
   margin: 5.625em 0 5.625em 23%;
   display: grid;

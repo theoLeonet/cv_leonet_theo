@@ -1,16 +1,3 @@
-.wdf__infos{
-  display: flex;
-  margin: 8.75em 0 0 23%; //140/16
-}
-
-.wdf__intro{
-  display: flex;
-  flex: 0;
-  flex-basis: 35%;
-
-  border-bottom: 1px solid $light_gray_text;
-}
-
 .wdf__title{
   height: 5.875em; //94/16
   width: 5.25em; //84/16
@@ -21,9 +8,6 @@
 }
 
 .wdf__sub{
-  width: 70%;
-  margin-left: 4.09090909em; //90/22
-
   font-family: "georgia", sans-serif;
   font-size: 1.375em; //22/16
   font-style: italic;
@@ -31,37 +15,100 @@
 }
 
 .wdf__numbers{
-  flex: 1;
   display: grid;
-  column-gap: 4.5em; //72/16
-  grid-template: repeat(2, max-content)/repeat(3, 9.375em); //150/16
-  padding: 3em 0 3em 3em; //48/16
-  margin-left: 7.5em; //120/16
-
-  background: $orange;
-  color: white;
+  column-gap: clamp(0.3125em, 1vw, 4.5em); //72/16 5/16
+  grid-template: repeat(2, max-content)/repeat(3, clamp(0em, calc(33.333% - 5px), 9.375em)); //150/16
 }
 
 .numbers__title{
   grid-area: 1/1/2/-1;
-
   font-family: "open sans", sans-serif;
   font-size: 0.6875em; //11/16
   font-weight: bold;
   letter-spacing: 0.0625em; //1/16
 }
 
-.numbers__infos{
-  margin-top: 1.25em; //20/16
-}
-
 .numbers__text{
   font-family: "georgia", sans-serif;
-  font-size: 0.75em; //12/16
+  font-size: clamp(0.6875em, 3%, 0.75em); //10/16 12/16
 }
 
 .numbers__number{
   font-family: "bebas neue pro", sans-serif;
-  font-size: 3.4375em; //55/16
+  font-size: clamp(1em, 10vw ,3.4375em); //55/16
   font-weight: bold;
+}
+
+@media screen and (min-width: 1221px){
+  .wdf__infos{
+    display: flex;
+    margin: 8.75em 0 0  clamp(50px, calc(100vw - 1470px), 450px); //140/16
+  }
+
+  .wdf__intro{
+    display: flex;
+    flex: 0;
+    //flex-basis: 35%;
+
+    border-bottom: 1px solid $light_gray_text;
+  }
+
+  .wdf__sub{
+    width: clamp(300px, 30vw, 500px);
+    margin-left: 4.09090909em; //90/22
+  }
+
+  .wdf__numbers{
+    flex: 1;
+    padding: 3em 0 3em 3em; //48/16
+    margin-left: clamp(1em, 6.25vw ,7.5em); //120/16
+
+    background: $orange;
+    color: white;
+  }
+
+  .numbers__infos{
+    margin-top: 1.25em; //20/16
+  }
+}
+
+@media screen and (max-width: 1220px){
+  .wdf__infos{
+    display: grid;
+    background: $orange;
+    color: white;
+    justify-items: center;
+  }
+
+  .wdf__intro{
+    display: grid;
+    justify-items: center;
+
+    text-align: center;
+  }
+
+  .wdf__title{
+    background-color: white;
+    padding: 1em;
+    margin-bottom: 2.5em;
+  }
+
+  .wdf__sub{
+    width: clamp(272px, 50vw, 600px);
+  }
+
+  .wdf__numbers{
+    display: grid;
+    width: clamp(0px ,95vw, 400px);
+    text-align: center;
+    margin: 3em 0;
+  }
+
+  .numbers__title{
+    margin-bottom: 2.5em;
+  }
+
+  .numbers__text{
+    width: 100%;
+  }
 }
