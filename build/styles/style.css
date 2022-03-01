@@ -717,46 +717,35 @@ header {
   }
 }
 .latest {
-  width: clamp(900px, 85%, 1200px);
-  padding: 0 calc((100% - clamp(900px, 85%, 1200px)) / 2);
+  display: grid;
+  padding: clamp(3em, 15vw, 5em) 0;
   background: black;
   color: white;
 }
 
 .latest__title {
-  padding-top: 4em;
   font-family: "bebas neue pro", sans-serif;
   font-size: 1.375em;
+  margin-left: 5%;
 }
 
 .latest__articles {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 2em;
-  margin-top: 5em;
+  width: 90%;
+  display: grid;
+  gap: 3em;
+  margin: 4em auto;
 }
 
 .latest__article {
   display: grid;
   grid-template: repeat(3, max-content)/repeat(2, 1fr);
-  width: clamp(100px, 100%, 373px);
 }
 
 .latest__article__image {
   order: 0;
-  width: 100%;
   grid-area: 1/1/2/-1;
+  width: 100%;
   margin-bottom: 1.25em;
-}
-
-.latest__article__title {
-  order: 3;
-  grid-area: 3/1/-1/-1;
-  margin-top: 2em;
-  font-family: "open sans", sans-serif;
-  font-size: 1.25em;
-  font-weight: bold;
-  line-height: 1.4;
 }
 
 .latest__article__sub {
@@ -769,24 +758,47 @@ header {
 
 .latest__article__date {
   order: 2;
-  justify-self: right;
+  justify-self: end;
   font-family: "georgia", sans-serif;
   font-size: 0.875em;
   font-style: italic;
   color: #E6E6E6;
 }
 
+.latest__article__title {
+  order: 3;
+  margin-top: 1em;
+  grid-area: 3/1/4/-1;
+  font-family: "open sans", sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
 .latest__all {
-  display: block;
-  margin-top: 8em;
-  padding-bottom: 8em;
+  justify-self: end;
+  margin-right: 5%;
   font-family: "bebas neue pro", sans-serif;
   font-size: 1.25em;
   font-weight: bold;
-  text-align: end;
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 600px) {
+  .latest__title, .latest__all {
+    justify-self: center;
+  }
+}
+@media screen and (min-width: 601px) {
+  .latest__articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1021px) {
+  .latest__articles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .newsletter {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
