@@ -1063,10 +1063,10 @@ header {
   }
 }
 .useful {
-  margin: 5.625em 0 5.625em 23%;
+  margin: 5.625em 0 5.625em clamp(50px, 100vw - 1470px, 450px);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 70px;
+  grid-template-columns: 300px 150px;
+  column-gap: clamp(600px, 50vw, 600px);
 }
 
 .useful__links {
@@ -1096,7 +1096,7 @@ header {
 }
 
 .useful__follow__links {
-  width: max-content;
+  max-width: 300px;
   display: flex;
   gap: 0 1em;
   padding-bottom: 2.1875em;
@@ -1130,6 +1130,33 @@ header {
   background: url("/sources/images/linkedin_logo.svg") no-repeat;
 }
 
+@media screen and (max-width: 1220px) {
+  .useful {
+    margin-left: clamp(100px, 100vw - 970px, 250px);
+    grid-template-columns: 154px;
+    row-gap: 60px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .useful {
+    margin-left: clamp(144px, 100vw - 620px, 300px);
+  }
+
+  .useful__links {
+    max-height: 34em;
+    row-gap: 30px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .useful {
+    margin-left: clamp(40px, 100vw - 420px, 200px);
+  }
+
+  .useful__links {
+    min-width: max-content;
+    max-height: 54em;
+  }
+}
 .footer {
   background: #F3F3F3;
   width: 50%;
