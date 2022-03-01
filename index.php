@@ -335,7 +335,7 @@
             <?php endfor; ?>
         </ul>
         <a class="footer__language" href="#">
-            <FR></FR>
+            FR
         </a>
     </section>
     <section class="footer__sec">

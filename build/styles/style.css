@@ -1159,8 +1159,8 @@ header {
 }
 .footer {
   background: #F3F3F3;
-  width: 50%;
-  padding: 3.1875em 25% 1em;
+  width: clamp(272px, 80%, 1220px);
+  padding: 3.1875em calc((100vw - clamp(0px, 80%, 1220px)) / 2) 1em;
 }
 
 .footer__main {
@@ -1207,6 +1207,26 @@ header {
   vertical-align: 0.2833em;
 }
 
+@media screen and (max-width: 1220px) {
+  .footer {
+    display: grid;
+    justify-items: center;
+  }
+
+  .footer__links, .footer__main, .footer__infos {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer__sec {
+    display: grid;
+    justify-items: end;
+  }
+
+  .footer__infos {
+    width: 95%;
+  }
+}
 .btn__share {
   padding: 0.7em 1.4em;
   font-family: "bebas neue pro", sans-serif;
