@@ -801,16 +801,14 @@ header {
 }
 .newsletter {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 60%;
-  padding: 4em 18% 2.75em;
+  width: clamp(272px, 80vw, 1152px);
+  padding: 4em 7% 2.75em;
   margin: 2.75em auto;
   background: #F3F3F3;
 }
 
 .newsletter__texts {
   width: 80%;
-  justify-self: end;
 }
 
 .newsletter__title {
@@ -850,12 +848,13 @@ header {
 .newsletter__socials__social {
   display: inline;
   align-self: center;
-  width: 2.3em;
+  width: 32px;
   aspect-ratio: 1/1;
   overflow: hidden;
+  font-size: 100px;
   color: transparent;
   background-position: center;
-  background-size: 0.9em 0.9em;
+  background-size: 16px 16px;
   border: 1px solid black;
   border-radius: 50%;
 }
@@ -875,14 +874,53 @@ header {
   background: url("/sources/images/linkedin_logo.svg") no-repeat;
 }
 
-.newsletter__image {
-  margin-top: -64px;
-  width: 317px;
-  aspect-ratio: 1/1.356466877;
-  grid-area: 1/2/-1/-1;
-  justify-self: center;
-}
+@media screen and (min-width: 1021px) {
+  .newsletter {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .newsletter__image {
+    margin-top: -64px;
+    width: 317px;
+    aspect-ratio: 1/1.356466877;
+    grid-area: 1/2/-1/-1;
+    justify-self: center;
+  }
+
+  .newsletter__texts {
+    justify-self: end;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .newsletter {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .newsletter__image {
+    order: -1;
+    width: 100%;
+  }
+
+  .newsletter__title {
+    font-size: 36px;
+    margin-top: 1em;
+  }
+
+  .newsletter__socials__intro {
+    font-size: 13px;
+  }
+
+  .newsletter__texts {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+  }
+
+  .newsletter__sub-btn {
+    margin-top: 2em;
+  }
+}
 .subscribe {
   padding: 16.25em 0 8.5em;
   text-align: center;
