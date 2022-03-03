@@ -459,20 +459,20 @@ header {
   }
 }
 .did-you-know {
-  background: #F3F3F3;
   position: relative;
+  background: #F3F3F3;
   padding: 11.25em 0;
 }
 
 .did-you-know__slider {
   display: flex;
   overflow: hidden;
-  max-width: clamp(18.75em, 50vw, 10000em);
+  max-width: clamp(256px, 80vw, 960px);
   margin: 0 auto;
 }
 
 .did-you-know__slide {
-  min-width: clamp(18.75em, 50vw, 10000em);
+  min-width: clamp(256px, 80vw, 960px);
   padding: clamp(1.875em, 10vw, 3.75em) 0;
   text-align: center;
   background: #c4bc8e;
@@ -529,13 +529,11 @@ header {
   }
 
   .left-arrow__btn {
-    top: calc(50% - 6.875em);
-    left: calc(25% - 2.5em);
+    margin: 10.625em 0 0 -40px;
   }
 
   .right-arrow__btn {
-    top: calc(50% - 6.875em);
-    right: calc(25% - 2.5em);
+    margin: 10.625em 0 0 calc(clamp(256px, 80vw, 960px) - 40px);
   }
 }
 .projects {

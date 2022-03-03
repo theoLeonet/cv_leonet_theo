@@ -115,10 +115,10 @@
         <h2 class="hidden">
             Le saviez vous?
         </h2>
-        <div class="left-arrow__btn">
-            <img src="" alt="a">
-        </div>
         <div class="did-you-know__slider">
+            <div class="left-arrow__btn">
+                <img src="" alt="a">
+            </div>
             <?php for($i=0; $i<count($did_you_know['subtitles']); $i++):?>
                 <article class="did-you-know__slide">
                     <h3 class="slide__title">
@@ -137,9 +137,9 @@
                     </div>
                 </article>
             <?php endfor; ?>
-        </div>
-        <div class="right-arrow__btn">
-            <img src="" alt="a">
+            <div class="right-arrow__btn">
+                <img src="" alt="a">
+            </div>
         </div>
         <svg class="slider__dots" xmlns="http://www.w3.org/2000/svg" width="80" height="10" viewBox="0 0 80 10">
             <g id="Dots" transform="translate(-2860 -6008)">

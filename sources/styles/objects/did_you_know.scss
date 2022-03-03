@@ -1,18 +1,18 @@
 .did-you-know{
-  background: $light_gray_bg;
   position: relative;
+  background: $light_gray_bg;
   padding:11.25em 0; //180/16
 }
 
 .did-you-know__slider{
   display: flex;
   overflow: hidden;
-  max-width: clamp(18.75em, 50vw, 10000em); //300/16
+  max-width: clamp(256px, 80vw, 960px); //300/16
   margin: 0 auto;
 }
 
 .did-you-know__slide{
-  min-width: clamp(18.75em, 50vw, 10000em); //300/16
+  min-width: clamp(256px, 80vw, 960px); //300/16
   padding: clamp(1.875em, 10vw, 3.75em) 0; //30/16 60/16
 
   text-align: center;
@@ -21,8 +21,6 @@
 }
 
 .slide__title{
-  //margin-top: 5em; //60/12
-
   font-family: "open sans", sans-serif;
   font-size: 0.75em; //12/16
   font-weight: bold;
@@ -76,12 +74,10 @@
   }
 
   .left-arrow__btn{
-    top: calc(50% - 6.875em); //110/16
-    left: calc(25% - 2.5em); //40/16
+    margin: 10.625em 0 0 -40px; //170/16
   }
 
   .right-arrow__btn{
-    top: calc(50% - 6.875em); //110/16
-    right: calc(25% - 2.5em); //40/16
+    margin: 10.625em 0 0  calc(clamp(256px, 80vw, 960px) - 40px); //170/16
   }
 }
