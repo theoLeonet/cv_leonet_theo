@@ -1159,7 +1159,7 @@ header {
 }
 .footer {
   background: #F3F3F3;
-  width: clamp(272px, 80%, 1220px);
+  width: clamp(0px, 80%, 1220px);
   padding: 3.1875em calc((100vw - clamp(0px, 80%, 1220px)) / 2) 1em;
 }
 
@@ -1224,7 +1224,8 @@ header {
   }
 
   .footer__infos {
-    width: 95%;
+    width: 100%;
+    line-height: 1.46;
   }
 }
 .btn__share {
