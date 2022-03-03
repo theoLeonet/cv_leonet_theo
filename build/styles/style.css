@@ -610,7 +610,7 @@ header {
 }
 
 .engagement__desc {
-  width: clamp(12.36363636em, 85%, 27.27272727em);
+  width: clamp(0px, 85vw, 27.27272727em);
   margin: 1.6em 0 3.75em 0;
   font-family: "georgia", serif;
   font-size: 1.375em;
