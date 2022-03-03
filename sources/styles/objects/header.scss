@@ -6,8 +6,7 @@ header{
 }
 
 .header__title{
-  align-self: center;
-  width: clamp(2.8125em, 15vw, 4.5em); //45/16 72/16
+  width: clamp(2.8125em, 15vw, 58px); //45/16 72/16
   aspect-ratio: 1/1.30555556;
   text-indent: -9999em;
   background: url("/sources/images/wdf_logo.svg") no-repeat center;
@@ -95,7 +94,7 @@ header{
 @media screen and (max-width: 1220px){
   header{
     height: clamp(3.9375em, 19.6875vw, 5.875em); //63/16 94/16
-    grid-template: 1fr 2fr 1fr/ repeat(2, 1fr);
+    grid-template: 5em 2fr 1fr/ repeat(2, 1fr);
   }
 
   .header__burger_menu--open{
@@ -138,21 +137,21 @@ header{
 
   .sec-menu__search{
     position: absolute;
-    right: clamp(0.625em ,40%, 21.875em); //10/16 350/16
-    top: clamp(3.75em, 10vh, 5em); //60/16 80/16
-    width: clamp(1em, 5vw, 1.75em);//28/16
+    right: clamp(8em ,21vw, 21.875em); //10/16 350/16
+    top: 5.3em; //60/16 80/16
+    width: clamp(1.5em, 5vw, 1.75em);//28/16
   }
 
   .sec-menu__language{
     position: absolute;
-    right: clamp(0.625em, 26%, 15.625em); //250/16
-    top: clamp(3.75em, 10vh, 5em); //60/16 80/16
-    font-size: clamp(0.6875em, 3.4375vw, 1.5em); //11/16 24/16
+    right: clamp(8em, 26vw, 15.625em); //250/16
+    top: 3em; //60/16 80/16
+    font-size: 16px; //11/16 24/16
   }
 
   .burger-menu__icon{
     grid-area: 1/2/2/-1;
-    align-self: center;
+    margin-top: 20px  ;
     justify-self: end;
     width: clamp(2em, 10vw, 4em); //32/16 64/16
     aspect-ratio: 1/0.8125;
@@ -215,18 +214,18 @@ header{
 
 @keyframes open {
   100%{
-    height: clamp(0em, 93vh, 46.5em); //744/16
-    padding: 0 10% calc(100vh - clamp(0em, 93vh, 46.5em)); //744/16
+    height: clamp(0em, 93vh, 450px); //744/16
+    padding-bottom: clamp(100px, calc(100vh - clamp(0em, 93vh, 450px)), 10000px); //744/16
   }
 }
 
 @keyframes close {
   0%{
     height: clamp(0em, 93vh, 46.5em);
-    padding: 0 10% 7vh;
+    padding-bottom: clamp(100px, calc(100vh - clamp(0em, 93vh, 46.5em)), 10000px); //744/16
   }
   100%{
     height: clamp(3.9375em, 19.6875vw, 5.875em); //63/16 94/16
-    padding: 1.25em 10%; //20/16
+    padding-bottom: 1.25em;
   }
 }
