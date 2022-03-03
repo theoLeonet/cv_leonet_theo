@@ -801,7 +801,7 @@ header {
 }
 .newsletter {
   display: grid;
-  width: clamp(272px, 80vw, 1152px);
+  width: clamp(0px, 80vw, 1152px);
   padding: 4em 7% 2.75em;
   margin: 2.75em auto;
   background: #F3F3F3;
