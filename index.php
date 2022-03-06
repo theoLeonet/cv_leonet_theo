@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./build/styles/style.css">
+   <link rel="stylesheet" href="./build/styles/style.css">
     <title>CV de Théo Léonet</title>
 </head>
 <body class="body">
@@ -245,7 +245,7 @@
             <?php endfor; ?>
         </ul>
     </div>
-    <img class="newsletter__image" src="./sources/images/forest.jpg" alt="forest">
+    <img class="newsletter__image" src="./sources/images/screen.jpg" alt="forest">
 </section>
 <section class="subscribe">
     <h2 class="subscribe__title">

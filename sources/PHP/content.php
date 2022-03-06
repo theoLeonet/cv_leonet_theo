@@ -105,10 +105,10 @@ $did_you_know = [
 ];
 $projects = [
     'images__src' => [
-        'sources/images/forest.jpg',
-        'sources/images/forest.jpg',
-        'sources/images/forest.jpg',
-        'sources/images/forest.jpg',
+        'sources/images/project1.jpg',
+        'sources/images/project2.jpg',
+        'sources/images/project3.jpg',
+        'sources/images/project4.jpg',
     ],
     'images__alt' => [
         'fake_project_1',
@@ -135,9 +135,9 @@ $engagement = [
         'Dans le monde, trop de personnes sont incapables d’utiliser internet et les ordinateurs d’une bonne manière. C’est pourquoi toute une section de nos cours est dédiée à l’apprentissage de l’utilisation d’un ordinateur et d’internet. Le mieux? Ces cours sont complètement gratuits!'
     ],
     'images__src' => [
+        'sources/images/accessibilite.jpg',
         'sources/images/forest.jpg',
-        'sources/images/forest.jpg',
-        'sources/images/forest.jpg',
+        'sources/images/ignorance_info.jpg',
     ],
     'images__alt' => [
         'forest.jpg',
@@ -147,10 +147,10 @@ $engagement = [
 ];
 $pictures = [
     'src' => [
-        'sources/images/forest.jpg',
-        'sources/images/forest.jpg',
-        'sources/images/forest.jpg',
-        'sources/images/forest.jpg',
+        'sources/images/projectimg1.jpg',
+        'sources/images/projectimg2.jpg',
+        'sources/images/projectimg3.jpg',
+        'sources/images/projectimg4.jpg',
     ],
     'alt' => [
         'forest.jpg',
@@ -176,9 +176,9 @@ $latest = [
         '10.08.2021 - 10:27',
     ],
     'images__src' => [
-        'sources/images/forest.jpg',
-        'sources/images/forest.jpg',
-        'sources/images/forest.jpg',
+        'sources/images/front-end.jpg',
+        'sources/images/grid.jpg',
+        'sources/images/grid.jpg',
     ],
     'images__alt' => [
         'forest.jpg',
