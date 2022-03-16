@@ -67,7 +67,17 @@
     <div class="burger-menu__icon"></div>
 </header>
 <video class="background__video" autoplay loop muted>
-    <source src="sources/images/coding_blured.mp4" type="video/mp4">
+    <source srcset="sources/images/videos/coding_blured-1920.mp4,
+                    sources/images/videos/coding_blured-1600.mp4,
+                    sources/images/videos/coding_blured-1366.mp4,
+                    sources/images/videos/coding_blured-1024.mp4,
+                    sources/images/videos/coding_blured-768.mp4,
+                    sources/images/videos/coding_blured-640.mp4,
+                    sources/images/videos/coding_blured-320.mp4"
+            sizes="100vw"
+            src="sources/images/videos/coding_blured-1920.mp4"
+            type="video/mp4"
+    />
 </video>
 <section class="intro">
     <h2 class="intro__title">
