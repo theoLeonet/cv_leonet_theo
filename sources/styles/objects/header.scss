@@ -10,7 +10,7 @@ header{
   aspect-ratio: 1/1.30555556;
   text-indent: -9999em;
 
-  background: url("/sources/images/wdf_logo.svg") no-repeat center;
+  background: url("/sources/pictures/original/icons/wdf_logo.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -44,19 +44,19 @@ header{
 }
 
 .Facebook{
-  background: url("/sources/images/facebook_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/facebook_logo.svg") no-repeat;
 }
 .Twitter{
-  background: url("/sources/images/twitter_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/twitter_logo.svg") no-repeat;
 }
 .Instagram{
-  background: url("/sources/images/instagram_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/instagram_logo.svg") no-repeat;
 }
 .Youtube{
-  background: url("/sources/images/youtube_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/youtube_logo.svg") no-repeat;
 }
 .Linkedin{
-  background: url("/sources/images/linkedin_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/linkedin_logo.svg") no-repeat;
 }
 
 .sec-nav__socials__link{
@@ -76,7 +76,7 @@ header{
   overflow: hidden;
 
   color: transparent;
-  background: url("/sources/images/search_icon.svg") center no-repeat;
+  background: url("/sources/pictures/original/icons/search_icon.svg") center no-repeat;
   background-size: contain;
 }
 
@@ -158,7 +158,7 @@ header{
     width: clamp(2em, 10vw, 3em); //32/16 64/16
     aspect-ratio: 1/0.8125;
 
-    background: url("/sources/images/bruger-menu__icon.svg") no-repeat center;
+    background: url("/sources/pictures/original/icons/bruger-menu__icon.svg") no-repeat center;
     background-size: contain;
   }
 }

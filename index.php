@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   <link rel="stylesheet" href="./build/styles/style.css">
+   <link rel="stylesheet" href="/build/styles/style.css">
     <title>CV de Théo Léonet</title>
 </head>
 <body class="body">
@@ -67,15 +67,15 @@
     <div class="burger-menu__icon"></div>
 </header>
 <video class="background__video" autoplay loop muted>
-    <source srcset="sources/images/videos/coding_blured-1920.mp4,
-                    sources/images/videos/coding_blured-1600.mp4,
-                    sources/images/videos/coding_blured-1366.mp4,
-                    sources/images/videos/coding_blured-1024.mp4,
-                    sources/images/videos/coding_blured-768.mp4,
-                    sources/images/videos/coding_blured-640.mp4,
-                    sources/images/videos/coding_blured-320.mp4"
+    <source srcset="sources/videos/resized/coding_blured-1920.mp4,
+                    sources/videos/resized/coding_blured-1600.mp4,
+                    sources/videos/resized/coding_blured-1366.mp4,
+                    sources/videos/resized/coding_blured-1024.mp4,
+                    sources/videos/resized/coding_blured-768.mp4,
+                    sources/videos/resized/coding_blured-640.mp4,
+                    sources/videos/resized/coding_blured-320.mp4"
             sizes="100vw"
-            src="sources/images/videos/coding_blured-1920.mp4"
+            src="sources/videos/resized/coding_blured-1920.mp4"
             type="video/mp4"
     />
 </video>
@@ -107,7 +107,7 @@
     <h2 class="about__title">
         THÉO
     </h2>
-    <img src="/sources/images/shrek.png" alt="shrek" class="about__image">
+    <img src="/sources/pictures/original/shrek.png" alt="shrek" class="about__image">
     <ul class="about__infos">
         <?php for($i=0; $i<count($about['subtitles']); $i++):?>
         <li class="infos__info">
@@ -170,7 +170,10 @@
         </p>
         <?php for ($i=0; $i<count($projects['names']); $i++): ?>
         <div class="projects__project">
-            <img src="<?= $projects['images__src'][$i] ?>" alt="<?= $projects['images__alt'][$i] ?>" class="project__image">
+            <img src="<?= $projects['images__src'][$i] ?>"
+                 srcset="<?= $projects['images__srcset'][$i] ?>"
+                 alt="<?= $projects['images__alt'][$i] ?>"
+                 class="project__image">
             <div class="project__name">
                 <p>
                     <?= $projects['names'][$i] ?>
@@ -196,7 +199,10 @@
                 <?= $engagement['texts'][$i] ?>
             </p>
         </div>
-        <img class="engagement__info__image" src="<?= $engagement['images__src'][$i] ?>" alt="<?= $engagement['images__alt'][$i] ?>">
+        <img class="engagement__info__image"
+             srcset="<?= $engagement['images__srcset'][$i] ?>"
+             src="<?= $engagement['images__src'][$i] ?>"
+             alt="<?= $engagement['images__alt'][$i] ?>">
     </section>
     <?php endfor; ?>
 </section>
@@ -255,14 +261,24 @@
             <?php endfor; ?>
         </ul>
     </div>
-    <img class="newsletter__image" src="./sources/images/screen.jpg" alt="forest">
+    <img class="newsletter__image"
+         srcset="sources/pictures/resized/newsletter/newsletter-1024x576.jpg,
+                sources/pictures/resized/newsletter/newsletter-768x432.jpg
+                sources/pictures/resized/newsletter/newsletter-640x360.jpg,
+                sources/pictures/resized/newsletter/newsletter-544x306.jpg
+                sources/pictures/resized/newsletter/newsletter-416x234.jpg,
+                sources/pictures/resized/newsletter/newsletter-304x171.jpg
+                sources/pictures/resized/newsletter/newsletter-256x144.jpg,
+                "
+         src="sources/pictures/resized/newsletter/newsletter-1024x576.jpg"
+         alt="Blurry computer screen with code">
 </section>
 <section class="subscribe">
     <h2 class="subscribe__title">
         Comment puis-je faire la différence ?
     </h2>
     <p class="subscribe__text">
-        C’est en suivant une ou plusieurs de nos nombreuses formations que vous pourrez faire la différence. Grâce à vous les métiers du web pourraient cesser d’être en pénurie. Vous pourriez vous même devenir conseiller WDF et aider des centaines de personnes à rejoindre le mouvement.
+        C’est en suivant une ou plusieurs de nos nombreuses formations que vous pourrez faire la différence. Grâce à vous les métiers du web pourraient cesser d’être en pénurie. Vous pourriez vous-même devenir conseiller WDF et aider des centaines de personnes à rejoindre le mouvement.
     </p>
     <div class="subscribe__btn">
         <a href="#">

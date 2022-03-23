@@ -100,7 +100,7 @@ header {
   width: clamp(2.8125em, 15vw, 58px);
   aspect-ratio: 1/1.30555556;
   text-indent: -9999em;
-  background: url("/sources/images/wdf_logo.svg") no-repeat center;
+  background: url("/sources/pictures/original/icons/wdf_logo.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -132,23 +132,23 @@ header {
 }
 
 .Facebook {
-  background: url("/sources/images/facebook_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/facebook_logo.svg") no-repeat;
 }
 
 .Twitter {
-  background: url("/sources/images/twitter_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/twitter_logo.svg") no-repeat;
 }
 
 .Instagram {
-  background: url("/sources/images/instagram_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/instagram_logo.svg") no-repeat;
 }
 
 .Youtube {
-  background: url("/sources/images/youtube_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/youtube_logo.svg") no-repeat;
 }
 
 .Linkedin {
-  background: url("/sources/images/linkedin_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/linkedin_logo.svg") no-repeat;
 }
 
 .sec-nav__socials__link {
@@ -166,7 +166,7 @@ header {
   aspect-ratio: 1/1;
   overflow: hidden;
   color: transparent;
-  background: url("/sources/images/search_icon.svg") center no-repeat;
+  background: url("/sources/pictures/original/icons/search_icon.svg") center no-repeat;
   background-size: contain;
 }
 
@@ -243,7 +243,7 @@ header {
     justify-self: end;
     width: clamp(2em, 10vw, 3em);
     aspect-ratio: 1/0.8125;
-    background: url("/sources/images/bruger-menu__icon.svg") no-repeat center;
+    background: url("/sources/pictures/original/icons/bruger-menu__icon.svg") no-repeat center;
     background-size: contain;
   }
 }
@@ -640,6 +640,7 @@ header {
 .engagement__info__image {
   width: 100%;
   aspect-ratio: 3/2;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 1281px) {
@@ -859,19 +860,19 @@ header {
   border-radius: 50%;
 }
 .newsletter__socials__social .Facebook {
-  background: url("/sources/images/facebook_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/facebook_logo.svg") no-repeat;
 }
 .newsletter__socials__social .Twitter {
-  background: url("/sources/images/twitter_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/twitter_logo.svg") no-repeat;
 }
 .newsletter__socials__social .Instagram {
-  background: url("/sources/images/instagram_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/instagram_logo.svg") no-repeat;
 }
 .newsletter__socials__social .Youtube {
-  background: url("/sources/images/youtube_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/youtube_logo.svg") no-repeat;
 }
 .newsletter__socials__social .Linkedin {
-  background: url("/sources/images/linkedin_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/linkedin_logo.svg") no-repeat;
 }
 
 @media screen and (min-width: 1021px) {
@@ -924,7 +925,8 @@ header {
 .subscribe {
   padding: clamp(3em, 15vw, 16.25em) 0 8.5em;
   text-align: center;
-  background: url("/sources/images/screen2.jpg");
+  background: url("/sources/pictures/original/subscribe/subscribe.jpg");
+  background-size: cover;
   color: white;
 }
 
@@ -1115,19 +1117,19 @@ header {
   background-size: contain;
 }
 .useful__follow__link .Facebook {
-  background: url("/sources/images/facebook_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/facebook_logo.svg") no-repeat;
 }
 .useful__follow__link .Twitter {
-  background: url("/sources/images/twitter_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/twitter_logo.svg") no-repeat;
 }
 .useful__follow__link .Instagram {
-  background: url("/sources/images/instagram_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/instagram_logo.svg") no-repeat;
 }
 .useful__follow__link .Youtube {
-  background: url("/sources/images/youtube_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/youtube_logo.svg") no-repeat;
 }
 .useful__follow__link .Linkedin {
-  background: url("/sources/images/linkedin_logo.svg") no-repeat;
+  background: url("/sources/pictures/original/icons/linkedin_logo.svg") no-repeat;
 }
 
 @media screen and (max-width: 1220px) {

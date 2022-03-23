@@ -105,10 +105,16 @@ $did_you_know = [
 ];
 $projects = [
     'images__src' => [
-        'sources/images/project1.jpg',
-        'sources/images/project2.jpg',
-        'sources/images/project3.jpg',
-        'sources/images/project4.jpg',
+        'sources/pictures/original/placeholders/1920x1080.jpg',
+        'sources/pictures/original/placeholders/1920x1080.jpg',
+        'sources/pictures/original/placeholders/1920x1080.jpg',
+        'sources/pictures/original/placeholders/1920x1080.jpg',
+    ],
+    'images__srcset' => [
+        'sources/pictures/original/placeholders/1920x1080.jpg',
+        'sources/pictures/original/placeholders/1920x1080.jpg',
+        'sources/pictures/original/placeholders/1920x1080.jpg',
+        'sources/pictures/original/placeholders/1920x1080.jpg',
     ],
     'images__alt' => [
         'fake_project_1',
@@ -135,22 +141,52 @@ $engagement = [
         'Dans le monde, trop de personnes sont incapables d’utiliser internet et les ordinateurs d’une bonne manière. C’est pourquoi toute une section de nos cours est dédiée à l’apprentissage de l’utilisation d’un ordinateur et d’internet. Le mieux? Ces cours sont complètement gratuits!'
     ],
     'images__src' => [
-        'sources/images/accessibilite.jpg',
-        'sources/images/forest.jpg',
-        'sources/images/ignorance_info.jpg',
+        'sources/pictures/resized/engagement/accessibility-1920x1080.jpg',
+        'sources/pictures/resized/engagement/environement-1920x1080.jpg',
+        'sources/pictures/resized/engagement/ignorance_info-1920x1080.jpg',
+    ],
+    'images__srcset' => [
+        '
+        sources/pictures/resized/engagement/accessibility-1920x1080.jpg,
+        sources/pictures/resized/engagement/accessibility-1600x1900.jpg,
+        sources/pictures/resized/engagement/accessibility-1366x768.jpg,
+        sources/pictures/resized/engagement/accessibility-1024x576.jpg,
+        sources/pictures/resized/engagement/accessibility-768x432.jpg,
+        sources/pictures/resized/engagement/accessibility-640x360.jpg,
+        sources/pictures/resized/engagement/accessibility-544x306.jpg,
+        ',
+        '
+        sources/pictures/resized/engagement/environement-1920x1080.jpg,
+        sources/pictures/resized/engagement/environement-1600x1900.jpg,
+        sources/pictures/resized/engagement/environement-1366x768.jpg,
+        sources/pictures/resized/engagement/environement-1024x576.jpg,
+        sources/pictures/resized/engagement/environement-768x432.jpg,
+        sources/pictures/resized/engagement/environement-640x360.jpg,
+        sources/pictures/resized/engagement/environement-544x306.jpg,
+        ',
+        '
+        sources/pictures/resized/engagement/ignorance_info-1920x1080.jpg,
+        sources/pictures/resized/engagement/ignorance_info-1600x1900.jpg,
+        sources/pictures/resized/engagement/ignorance_info-1366x768.jpg,
+        sources/pictures/resized/engagement/ignorance_info-1024x576.jpg,
+        sources/pictures/resized/engagement/ignorance_info-768x432.jpg,
+        sources/pictures/resized/engagement/ignorance_info-640x360.jpg,
+        sources/pictures/resized/engagement/ignorance_info-544x306.jpg,
+        ',
+
     ],
     'images__alt' => [
-        'forest.jpg',
-        'forest.jpg',
-        'forest.jpg',
+        'Computer with "Designers should always keep their users in mind" written on it',
+        'Forest of pine trees from the top',
+        'Old man struggling to use a computer',
     ],
 ];
 $pictures = [
     'src' => [
-        'sources/images/projectimg1.jpg',
-        'sources/images/projectimg2.jpg',
-        'sources/images/projectimg3.jpg',
-        'sources/images/projectimg4.jpg',
+        'sources/pictures/original/placeholders/1920x1080.jpg',
+        'sources/pictures/original/placeholders/1920x1080.jpg',
+        'sources/pictures/original/placeholders/1920x1080.jpg',
+        'sources/pictures/original/placeholders/1920x1080.jpg',
     ],
     'alt' => [
         'forest.jpg',
@@ -176,14 +212,37 @@ $latest = [
         '10.08.2021 - 10:27',
     ],
     'images__src' => [
-        'sources/images/front-end.jpg',
-        'sources/images/grid.jpg',
-        'sources/images/grid.jpg',
+        'sources/pictures/resized/articles/front-end-dev-640x360.jpg',
+        'sources/pictures/resized/articles/grid-640x360.jpg',
+        'sources/pictures/resized/articles/grid-640x360.jpg',
+    ],
+    'images__srcset' => [
+        '
+        sources/pictures/resized/articles/front-end-dev-640x360.jpg,
+        sources/pictures/resized/articles/front-end-dev-544x306.jpg,
+        sources/pictures/resized/articles/front-end-dev-416x234.jpg,
+        sources/pictures/resized/articles/front-end-dev-304x171.jpg,
+        sources/pictures/resized/articles/front-end-dev-256x144.jpg,
+        ',
+        '
+        sources/pictures/resized/articles/grid-640x360.jpg,
+        sources/pictures/resized/articles/grid-544x306.jpg,
+        sources/pictures/resized/articles/grid-416x234.jpg,
+        sources/pictures/resized/articles/grid-304x171.jpg,
+        sources/pictures/resized/articles/grid-256x144.jpg,
+        ',
+        '
+        sources/pictures/resized/articles/grid-640x360.jpg,
+        sources/pictures/resized/articles/grid-544x306.jpg,
+        sources/pictures/resized/articles/grid-416x234.jpg,
+        sources/pictures/resized/articles/grid-304x171.jpg,
+        sources/pictures/resized/articles/grid-256x144.jpg,
+        ',
     ],
     'images__alt' => [
-        'forest.jpg',
-        'forest.jpg',
-        'forest.jpg',
+        'Hands coding on a computer',
+        'Css grid layout example',
+        'Css grid layout example',
     ],
 ];
 $newsletter = [
@@ -295,16 +354,16 @@ $footer = [
             '#',
         ],
         'images__src' => [
-            '/images/forest.jpg',
-            '/images/forest.jpg',
-            '/images/forest.jpg',
-            '/images/forest.jpg',
+            '#',
+            '#',
+            '#',
+            '#',
         ],
         'images__alt' => [
-            'forest.jpg',
-            'forest.jpg',
-            'forest.jpg',
-            'forest.jpg',
+            'logo',
+            'logo',
+            'logo',
+            'logo',
         ],
     ],
     'infos' => [
