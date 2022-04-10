@@ -4,14 +4,19 @@
   padding:11.25em 0; //180/16
 }
 
-.did-you-know__slider{
-  display: flex;
+.did-you-know__slider__box{
   overflow: hidden;
   max-width: clamp(256px, 80vw, 960px); //300/16
   margin: 0 auto;
+  display: flex;
+}
+
+.did-you-know__slider{
+  display: flex;
 }
 
 .did-you-know__slide{
+  display: grid;
   min-width: clamp(256px, 80vw, 960px); //300/16
   padding: clamp(1.875em, 10vw, 3.75em) 0; //30/16 60/16
 
@@ -21,6 +26,7 @@
 }
 
 .slide__title{
+  order: -1;
   font-family: "open sans", sans-serif;
   font-size: 0.75em; //12/16
   font-weight: bold;

@@ -386,7 +386,7 @@ header {
 
 .about__info__title {
   font-family: "bebas neue pro", sans-serif;
-  font-size: 1.125em;
+  font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -464,14 +464,19 @@ header {
   padding: 11.25em 0;
 }
 
-.did-you-know__slider {
-  display: flex;
+.did-you-know__slider__box {
   overflow: hidden;
   max-width: clamp(256px, 80vw, 960px);
   margin: 0 auto;
+  display: flex;
+}
+
+.did-you-know__slider {
+  display: flex;
 }
 
 .did-you-know__slide {
+  display: grid;
   min-width: clamp(256px, 80vw, 960px);
   padding: clamp(1.875em, 10vw, 3.75em) 0;
   text-align: center;
@@ -479,6 +484,7 @@ header {
 }
 
 .slide__title {
+  order: -1;
   font-family: "open sans", sans-serif;
   font-size: 0.75em;
   font-weight: bold;
@@ -623,7 +629,7 @@ header {
 }
 
 .engagement__infos:nth-of-type(n+2) {
-  margin-top: 6.25em;
+  margin-top: 10em;
 }
 
 .engagement__info__title {
@@ -675,12 +681,33 @@ header {
 
   .engagement__info__texts {
     display: grid;
-    width: 75%;
+    width: 80%;
     gap: 0.9375em;
+    margin: 0 auto;
   }
 
   .engagement__info__image {
-    order: -1;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .engagement__infos:nth-of-type(n+2) {
+    margin-top: 5em;
+  }
+
+  .engagement__info__texts {
+    width: 100%;
+  }
+
+  .engagement__info__image {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .engagement__info__title {
+    font-size: 1.7em;
   }
 }
 .projects__images {
