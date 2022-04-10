@@ -176,7 +176,7 @@ $engagement = [
 
     ],
     'images__alt' => [
-        'Computer with "Designers should always keep their users in mind" written on it',
+        'Computer with Designers should always keep their users in mind written on it',
         'Forest of pine trees from the top',
         'Old man struggling to use a computer',
     ],
