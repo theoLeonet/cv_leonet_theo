@@ -97,9 +97,13 @@ $did_you_know = [
     ],
     'texts' => [
         'Il aime les pates au fromage par dessus tout, et ce depuis qu’il est tout petit. Depuis quelques années maintenant, il a décidé d‘adopter un régime végétarien.',
+
         'Il est déjà allé dans plein de pays d’Europe (France, Italie, Allemagne, Angleterre, Autriche, Luxembourg, Pays-Bas,...) et à pour ambition d’aller vivre en Corée.',
+
         'Au départ, il devait aller dans une école de dessin, mais il à raté l’examen d’entrée. Il s’est alors retrouvé par hasard à la HEPL de Seraing et à découvert le monde fascinant du web.',
+
         'Il a depuis toujours fait de la musique avec plus ou moins de succès. D’abord petit, il à appris à jouer du piano, puis plus tard, il s’est acheté un ukulélé et une guitare dont il a appris à jouer par lui même.',
+
         'Sans sa copine pour le pousser à travailler et le soutenir dans toutes les situations, il aurait déjà abandonné plus d’une fois. C’est aussi elle qui est derrière ses plus brillantes idées.',
     ],
 ];
@@ -147,34 +151,37 @@ $engagement = [
     ],
     'images__srcset' => [
         '
-        sources/pictures/resized/engagement/accessibility-1920x1080.jpg,
-        sources/pictures/resized/engagement/accessibility-1600x1900.jpg,
-        sources/pictures/resized/engagement/accessibility-1366x768.jpg,
-        sources/pictures/resized/engagement/accessibility-1024x576.jpg,
-        sources/pictures/resized/engagement/accessibility-768x432.jpg,
-        sources/pictures/resized/engagement/accessibility-640x360.jpg,
-        sources/pictures/resized/engagement/accessibility-544x306.jpg,
+        sources/pictures/resized/engagement/accessibility-1920x1080.jpg 1920w,
+        sources/pictures/resized/engagement/accessibility-1600x1900.jpg 1600w,
+        sources/pictures/resized/engagement/accessibility-1366x768.jpg  1336w,
+        sources/pictures/resized/engagement/accessibility-1024x576.jpg  1024w,
+        sources/pictures/resized/engagement/accessibility-768x432.jpg   768w ,
+        sources/pictures/resized/engagement/accessibility-640x360.jpg   640w ,
+        sources/pictures/resized/engagement/accessibility-544x306.jpg   544w 
         ',
         '
-        sources/pictures/resized/engagement/environement-1920x1080.jpg,
-        sources/pictures/resized/engagement/environement-1600x1900.jpg,
-        sources/pictures/resized/engagement/environement-1366x768.jpg,
-        sources/pictures/resized/engagement/environement-1024x576.jpg,
-        sources/pictures/resized/engagement/environement-768x432.jpg,
-        sources/pictures/resized/engagement/environement-640x360.jpg,
-        sources/pictures/resized/engagement/environement-544x306.jpg,
+        sources/pictures/resized/engagement/environement-1920x1080.jpg 1920w,
+        sources/pictures/resized/engagement/environement-1600x1900.jpg 1600w,
+        sources/pictures/resized/engagement/environement-1366x768.jpg  1336w,
+        sources/pictures/resized/engagement/environement-1024x576.jpg  1024w,
+        sources/pictures/resized/engagement/environement-768x432.jpg   768w ,
+        sources/pictures/resized/engagement/environement-640x360.jpg   640w ,
+        sources/pictures/resized/engagement/environement-544x306.jpg   544w 
         ',
         '
-        sources/pictures/resized/engagement/ignorance_info-1920x1080.jpg,
-        sources/pictures/resized/engagement/ignorance_info-1600x1900.jpg,
-        sources/pictures/resized/engagement/ignorance_info-1366x768.jpg,
-        sources/pictures/resized/engagement/ignorance_info-1024x576.jpg,
-        sources/pictures/resized/engagement/ignorance_info-768x432.jpg,
-        sources/pictures/resized/engagement/ignorance_info-640x360.jpg,
-        sources/pictures/resized/engagement/ignorance_info-544x306.jpg,
+        sources/pictures/resized/engagement/ignorance_info-1920x1080.jpg 1920w,
+        sources/pictures/resized/engagement/ignorance_info-1600x1900.jpg 1600w,
+        sources/pictures/resized/engagement/ignorance_info-1366x768.jpg  1336w,
+        sources/pictures/resized/engagement/ignorance_info-1024x576.jpg  1024w,
+        sources/pictures/resized/engagement/ignorance_info-768x432.jpg   768w ,
+        sources/pictures/resized/engagement/ignorance_info-640x360.jpg   640w ,
+        sources/pictures/resized/engagement/ignorance_info-544x306.jpg   544w 
         ',
 
     ],
+    'images__sizes' =>
+        'calc((85vw - 10em)/2)',
+
     'images__alt' => [
         'Computer with Designers should always keep their users in mind written on it',
         'Forest of pine trees from the top',
@@ -218,27 +225,34 @@ $latest = [
     ],
     'images__srcset' => [
         '
-        sources/pictures/resized/articles/front-end-dev-640x360.jpg,
-        sources/pictures/resized/articles/front-end-dev-544x306.jpg,
-        sources/pictures/resized/articles/front-end-dev-416x234.jpg,
-        sources/pictures/resized/articles/front-end-dev-304x171.jpg,
-        sources/pictures/resized/articles/front-end-dev-256x144.jpg,
+        sources/pictures/resized/articles/front-end-dev-640x360.jpg 640w,
+        sources/pictures/resized/articles/front-end-dev-544x306.jpg 544w,
+        sources/pictures/resized/articles/front-end-dev-416x234.jpg 416w,
+        sources/pictures/resized/articles/front-end-dev-304x171.jpg 304w,
+        sources/pictures/resized/articles/front-end-dev-256x144.jpg 256w
         ',
         '
-        sources/pictures/resized/articles/grid-640x360.jpg,
-        sources/pictures/resized/articles/grid-544x306.jpg,
-        sources/pictures/resized/articles/grid-416x234.jpg,
-        sources/pictures/resized/articles/grid-304x171.jpg,
-        sources/pictures/resized/articles/grid-256x144.jpg,
+        sources/pictures/resized/articles/grid-640x360.jpg 640w,
+        sources/pictures/resized/articles/grid-544x306.jpg 544w,
+        sources/pictures/resized/articles/grid-416x234.jpg 416w,
+        sources/pictures/resized/articles/grid-304x171.jpg 304w,
+        sources/pictures/resized/articles/grid-256x144.jpg 256w
         ',
         '
-        sources/pictures/resized/articles/grid-640x360.jpg,
-        sources/pictures/resized/articles/grid-544x306.jpg,
-        sources/pictures/resized/articles/grid-416x234.jpg,
-        sources/pictures/resized/articles/grid-304x171.jpg,
-        sources/pictures/resized/articles/grid-256x144.jpg,
+        sources/pictures/resized/articles/grid-640x360.jpg 640w,
+        sources/pictures/resized/articles/grid-544x306.jpg 544w,
+        sources/pictures/resized/articles/grid-416x234.jpg 416w,
+        sources/pictures/resized/articles/grid-304x171.jpg 304w,
+        sources/pictures/resized/articles/grid-256x144.jpg 256w
         ',
     ],
+    'images__sizes' =>
+        '
+        (min-width: 1021px) calc((90vw-(2*3em))/3),
+        (min-width: 601px) calc((90vw-3em)/2),
+        (max-width: 600px) 90vw
+        '
+        ,
     'images__alt' => [
         'Hands coding on a computer',
         'Css grid layout example',
@@ -266,7 +280,7 @@ $newsletter = [
 $wdf__infos = [
     'numbers' => [
         '+3500',
-        '65%',
+        '65vw',
         '150',
     ],
     'texts' => [
@@ -303,15 +317,15 @@ $useful = [
         'Toute l’équipe WDF',
         'Guidelines WAI',
         'Écoles',
-        'À propos de WDF',
+        'À propos de la WDF',
         'À la une',
         'Faire un don',
         'Devenez membre',
         'Nos partenaires',
-        'Livres publiés par le WDF',
+        'Livres publiés par la WDF',
         'Concours',
         'WDF-shop',
-        'Histoire du WDF',
+        'Histoire de la WDF',
         'Jobs',
         'Contactez-nous',
         'FAQ',
@@ -368,7 +382,7 @@ $footer = [
     ],
     'infos' => [
         'texts' => [
-            'WDF est une organisation totalement fictionelle',
+            'WDF est une organisation totalement fictionnelle',
             'Numéro d’enregistrement national: BE 0408.656.248',
             'Numéro d’exonération fiscale: BE 0420.952.383',
         ],

@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
    <link rel="stylesheet" href="/build/styles/style.css">
@@ -67,14 +67,7 @@
     <div class="burger-menu__icon"></div>
 </header>
 <video class="background__video" autoplay loop muted>
-    <source srcset="sources/videos/resized/coding_blured-1920.mp4,
-                    sources/videos/resized/coding_blured-1600.mp4,
-                    sources/videos/resized/coding_blured-1366.mp4,
-                    sources/videos/resized/coding_blured-1024.mp4,
-                    sources/videos/resized/coding_blured-768.mp4,
-                    sources/videos/resized/coding_blured-640.mp4,
-                    sources/videos/resized/coding_blured-320.mp4"
-            sizes="100vw"
+    <source
             src="sources/videos/resized/coding_blured-1920.mp4"
             type="video/mp4"
     />
@@ -125,30 +118,42 @@
         <h2 class="hidden">
             Le saviez vous?
         </h2>
-        <div class="did-you-know__slider">
+        <div class="did-you-know__slider__box">
             <div class="left-arrow__btn">
-                <img src="" alt="a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21.863" height="18.53" viewBox="0 0 21.863 18.53">
+                    <g id="Groupe_33" data-name="Groupe 33" transform="translate(-37.637 -39.635)">
+                        <path id="Tracé_3" data-name="Tracé 3" d="M20,0H0" transform="translate(39.5 48.5)" fill="none" stroke="#000" stroke-width="3"/>
+                        <path id="Tracé_1" data-name="Tracé 1" d="M2198.659,5690.593l-7.053,8.5,7.053,8.086" transform="translate(-2152 -5650)" fill="none" stroke="#000" stroke-width="3"/>
+                    </g>
+                </svg>
             </div>
-            <?php for($i=0; $i<count($did_you_know['subtitles']); $i++):?>
-                <article class="did-you-know__slide">
-                    <h3 class="slide__title">
-                        Le saviez-vous ?
-                    </h3>
-                    <p class="slide__sub">
-                        <?= $did_you_know['subtitles'][$i] ?>
-                    </p>
-                    <p class="slide__text">
-                        <?= $did_you_know['texts'][$i] ?>
-                    </p>
-                    <div class="slide__btn__share btn__share">
-                        <p>
-                            Je partage
+            <div class="did-you-know__slider">
+                <?php for($i=0; $i<count($did_you_know['subtitles']); $i++):?>
+                    <article class="did-you-know__slide">
+                        <h3 class="slide__sub">
+                            <?= $did_you_know['subtitles'][$i] ?>
+                        </h3>
+                        <p class="slide__title">
+                            Le saviez vous?
                         </p>
-                    </div>
-                </article>
-            <?php endfor; ?>
+                        <p class="slide__text">
+                            <?= $did_you_know['texts'][$i] ?>
+                        </p>
+                        <div class="slide__btn__share btn__share">
+                            <p>
+                                Je partage
+                            </p>
+                        </div>
+                    </article>
+                <?php endfor; ?>
+            </div>
             <div class="right-arrow__btn">
-                <img src="" alt="a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21.863" height="18.53" viewBox="0 0 21.863 18.53">
+                    <g id="Groupe_34" data-name="Groupe 34" transform="translate(-39.5 -39.635)">
+                        <path id="Tracé_2" data-name="Tracé 2" d="M0,0H20" transform="translate(39.5 48.5)" fill="none" stroke="#000" stroke-width="3"/>
+                        <path id="Tracé_1" data-name="Tracé 1" d="M2191.606,5690.593l7.053,8.5-7.053,8.086" transform="translate(-2139.265 -5650)" fill="none" stroke="#000" stroke-width="3"/>
+                    </g>
+                </svg>
             </div>
         </div>
         <svg class="slider__dots" xmlns="http://www.w3.org/2000/svg" width="80" height="10" viewBox="0 0 80 10">
@@ -202,6 +207,7 @@
         <img class="engagement__info__image"
              srcset="<?= $engagement['images__srcset'][$i] ?>"
              src="<?= $engagement['images__src'][$i] ?>"
+             sizes="<?= $engagement['images__sizes'] ?>"
              alt="<?= $engagement['images__alt'][$i] ?>">
     </section>
     <?php endfor; ?>
@@ -224,7 +230,12 @@
                 <h3 class="latest__article__title">
                     <?= $latest['titles'][$i] ?>
                 </h3>
-                <img src="<?= $latest['images__src'][$i] ?>" alt="<?= $latest['images__alt'][$i] ?>" class="latest__article__image">
+                <img
+                        src="<?= $latest['images__src'][$i] ?>"
+                        srcset="<?= $latest['images__srcset'][$i] ?>"
+                        sizes="<?= $latest['images__sizes'] ?>"
+                        alt="<?= $latest['images__alt'][$i] ?>"
+                        class="latest__article__image">
                 <p class="latest__article__sub">
                     <?= $latest['subtitles'][$i] ?>
                 </p>
@@ -262,14 +273,18 @@
         </ul>
     </div>
     <img class="newsletter__image"
-         srcset="sources/pictures/resized/newsletter/newsletter-1024x576.jpg,
-                sources/pictures/resized/newsletter/newsletter-768x432.jpg
-                sources/pictures/resized/newsletter/newsletter-640x360.jpg,
-                sources/pictures/resized/newsletter/newsletter-544x306.jpg
-                sources/pictures/resized/newsletter/newsletter-416x234.jpg,
-                sources/pictures/resized/newsletter/newsletter-304x171.jpg
-                sources/pictures/resized/newsletter/newsletter-256x144.jpg,
+         srcset="sources/pictures/resized/newsletter/newsletter-1024x576.jpg 1024w,
+                sources/pictures/resized/newsletter/newsletter-768x432.jpg   768w,
+                sources/pictures/resized/newsletter/newsletter-640x360.jpg   640w,
+                sources/pictures/resized/newsletter/newsletter-544x306.jpg   544w,
+                sources/pictures/resized/newsletter/newsletter-416x234.jpg   416w,
+                sources/pictures/resized/newsletter/newsletter-304x171.jpg   304w,
+                sources/pictures/resized/newsletter/newsletter-256x144.jpg   256w
                 "
+         sizes="
+            (min-width: 1021px) 317px,
+            (max-width: 1020px) 80vw
+        "
          src="sources/pictures/resized/newsletter/newsletter-1024x576.jpg"
          alt="Blurry computer screen with code">
 </section>
@@ -341,7 +356,7 @@
     </div>
 </section>
 <footer class="footer">
-    <section class="footer__main">
+    <div class="footer__main">
         <ul class="footer__links">
             <?php for ($i=0; $i<count($footer['links']); $i++): ?>
                 <li class="footer__link">
@@ -363,8 +378,8 @@
         <a class="footer__language" href="#">
             FR
         </a>
-    </section>
-    <section class="footer__sec">
+    </div>
+    <div class="footer__sec">
         <ul class="footer__infos">
             <?php for ($i=0; $i<count($footer['infos']['texts']); $i++): ?>
                 <li class="footer__info">
@@ -372,7 +387,7 @@
                 </li>
             <?php endfor; ?>
         </ul>
-    </section>
+    </div>
 </footer>
 <script src="build/scripts/main.js"></script>
 </body>
