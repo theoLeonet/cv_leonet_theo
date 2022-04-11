@@ -5,6 +5,10 @@
   column-gap: clamp(600px, 50vw, 600px);
 }
 
+.useful a:hover{
+  text-decoration: underline;
+}
+
 .useful__links{
   display: flex;
   flex-direction: column;

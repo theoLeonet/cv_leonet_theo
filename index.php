@@ -22,10 +22,12 @@
             Navigation secondaire
         </h3>
         <ul class="sec-nav__main-menu">
-            <?php for($i = 0; $i < count($sec_nav['main_menu']['links']); $i++): ?><li class="sec-nav__main-menu__link">
-                <a href="<?= $sec_nav['main_menu']['links'][$i] ?>">
-                    <?= $sec_nav['main_menu']['texts'][$i] ?>
-                </a></li>
+            <?php for($i = 0; $i < count($sec_nav['main_menu']['links']); $i++): ?>
+                <li class="sec-nav__main-menu__link">
+                    <a href="<?= $sec_nav['main_menu']['links'][$i] ?>">
+                        <?= $sec_nav['main_menu']['texts'][$i] ?>
+                    </a>
+                </li>
             <?php endfor; ?>
         </ul>
         <ul class="sec-nav__socials">
@@ -217,7 +219,7 @@
         Images des projets
     </h2>
     <?php for ($i=0; $i<count($pictures['src']); $i++): ?>
-    <img class="projects__images__image" src="<?= $pictures['src'][$i] ?>" alt="<?= $pictures['alt'][$i] ?>">
+        <img class="projects__images__image" src="<?= $pictures['src'][$i] ?>" alt="<?= $pictures['alt'][$i] ?>">
     <?php endfor; ?>
 </section>
 <section class="latest">

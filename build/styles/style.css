@@ -114,6 +114,10 @@ header {
   text-transform: uppercase;
 }
 
+.main-nav__main-menu__link a:hover {
+  color: #f07f00;
+}
+
 .sec-nav {
   display: flex;
   font-family: "open sans", sans-serif;
@@ -125,6 +129,10 @@ header {
 
 .sec-nav__main-menu, .sec-nav__sec-menu {
   display: flex;
+}
+
+.sec-nav a:hover {
+  text-decoration: underline;
 }
 
 .sec-nav__socials {
@@ -1098,6 +1106,10 @@ header {
   column-gap: clamp(600px, 50vw, 600px);
 }
 
+.useful a:hover {
+  text-decoration: underline;
+}
+
 .useful__links {
   display: flex;
   flex-direction: column;
@@ -1190,6 +1202,10 @@ header {
   background: #F3F3F3;
   width: clamp(0px, 80%, 1220px);
   padding: 3.1875em calc((100vw - clamp(0px, 80%, 1220px)) / 2) 1em;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 .footer__main {

@@ -24,6 +24,10 @@ header{
   text-transform: uppercase;
 }
 
+.main-nav__main-menu__link a:hover{
+  color: $orange;
+}
+
 .sec-nav{
   display: flex;
 
@@ -37,6 +41,10 @@ header{
 
 .sec-nav__main-menu, .sec-nav__sec-menu{
   display: flex;
+}
+
+.sec-nav a:hover{
+  text-decoration: underline;
 }
 
 .sec-nav__socials{
