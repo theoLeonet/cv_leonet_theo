@@ -1,8 +1,9 @@
 /*
-sources/images/.DS_Store
+sources/pictures/.DS_Store
 !.gitignore
 !README.md
-!.lando.yml
-!/build
 !/index.php
 !/sources
+!/.lando.yml
+!/package.json
+!/webpack.mix.js

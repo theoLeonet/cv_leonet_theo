@@ -19,16 +19,10 @@ $sec_nav = [
     'socials' => [
         'texts' => [
             'Twitter',
-            'Facebook',
-            'Instagram',
-            'Youtube',
             'Linkedin'
         ],
         'links' => [
             'https://twitter.com',
-            'https://facebook.com',
-            'https://instagram.com',
-            'https://youtube.com',
             'https://linkedin.com'
         ]
     ]

@@ -1,9 +1,13 @@
+import {LanguagePicker} from "./LanguagePicker";
+
 const backgroundVideo: HTMLVideoElement = document.querySelector('.background__video') as HTMLVideoElement;
 const about: HTMLElement = document.querySelector('.about') as HTMLElement;
 const secNav: HTMLElement = document.querySelector('.sec-nav') as HTMLElement;
 const mainNav: HTMLElement = document.querySelector('.main-nav') as HTMLElement;
 const burgerMenuIcon: HTMLDivElement = document.querySelector('.burger-menu__icon') as HTMLDivElement;
+
 const header: HTMLElement = document.querySelector('header') as HTMLElement;
+const languagePicker = new LanguagePicker();
 
 let burgerOpen: boolean = false;
 

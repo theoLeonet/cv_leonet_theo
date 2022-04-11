@@ -1,0 +1,30 @@
+{
+  "name": "cv_leonet_theo",
+  "version": "1.0.0",
+  "description": "###### This website was made as an exercise for my lessons at HEPL, a school in Liège Belgium.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theoLeonet/cv_leonet_theo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theoLeonet/cv_leonet_theo/issues"
+  },
+  "homepage": "https://github.com/theoLeonet/cv_leonet_theo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.43",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.50.0",
+    "sass-loader": "^12.6.0",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.3"
+  }
+}

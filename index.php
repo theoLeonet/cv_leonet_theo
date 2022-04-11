@@ -6,7 +6,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-   <link rel="stylesheet" href="/build/styles/style.css">
+   <link rel="stylesheet" href="/dist/css/main.css">
     <title>CV de Théo Léonet</title>
 </head>
 <body class="body">
@@ -50,7 +50,14 @@
                 Recherche
             </li>
             <li class="sec-menu__language">
-                Fr
+                <form action="#" class="language-picker__form">
+                    <label for="language-picker__select" class="language-picker__label">
+                        <select name="language-picker__select" id="language-picker__select">
+                            <option value="" class="select__option french">Francais</option>
+                            <option value="" class="select__option english">English</option>
+                        </select>
+                    </label>
+                </form>
             </li>
         </ul>
     </nav>
@@ -197,7 +204,7 @@
         La WDF s’engage à fournir des contenus de qualité à petit prix et à utiliser cet argent pour aider les développeurs prometteurs à se lancer dans le web.
     </p>
     <?php for ($i=0; $i<count($engagement['titles']); $i++): ?>
-    <section class="engagement__infos">
+    <article class="engagement__infos">
         <div class="engagement__info__texts">
             <h3 class="engagement__info__title">
                 <?= $engagement['titles'][$i] ?>
@@ -211,7 +218,7 @@
              src="<?= $engagement['images__src'][$i] ?>"
              sizes="<?= $engagement['images__sizes'] ?>"
              alt="<?= $engagement['images__alt'][$i] ?>">
-    </section>
+    </article>
     <?php endfor; ?>
 </section>
 <section class="projects__images">
@@ -326,7 +333,6 @@
                 </p>
             </div>
             <?php endfor; ?>
-
     </aside>
 </section>
 <section class="useful">
@@ -391,6 +397,6 @@
         </ul>
     </div>
 </footer>
-<script src="build/scripts/main.js"></script>
+//<script src="dist/js/Main.js"></script>
 </body>
 </html>
