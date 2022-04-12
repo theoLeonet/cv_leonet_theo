@@ -1,0 +1,50 @@
+.closed{
+  display: none;
+}
+
+
+
+.sec-menu__language{
+  position: relative;
+}
+
+.language-picker__button{
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 14px; //24/16
+  font-weight: 500;
+}
+
+.language-picker__dropdown{
+  position: absolute;
+  top: 27px;
+  right: -10px;
+  width: max-content;
+  height: max-content;
+
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 18px; //24/16
+  font-weight: 500;
+
+  background: white;
+  border: 1px solid $light_gray_text;
+}
+
+.language-picker__option__container{
+  padding: 16px 24px 5px;
+}
+
+.language-picker__option__container:hover{
+  background: $light_gray_bg;
+}
+
+.language-picker__option__container + .language-picker__option__container{
+  padding: 10px 24px;
+}
+
+.language-picker__option{
+  color: black;
+}
+
+a.is-selected{
+  color: orange;
+}
