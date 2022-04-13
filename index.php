@@ -47,7 +47,18 @@
                 </a>
             </li>
             <li class="sec-menu__search">
-                Recherche
+                <a href="" class="search__link"> Recherche </a>
+                <div class="search__dropdown__container">
+                    <div class="search__dropdown">
+                        <p class="search__dropdown__text">Chercher</p>
+                        <form action="#" class="search__dropdown__form">
+                            <label for="search__input" class="search__input__label hidden">Rechercher</label>
+                            <input type="search" id="search__input">
+                            <button class="search__button">Rechercher</button>
+                        </form>
+                        <button class="search__button--close">Fermer</button>
+                    </div>
+                </div>
             </li>
             <li class="sec-menu__language">
                 <form action="#" class="language-picker__form">
