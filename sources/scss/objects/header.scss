@@ -5,6 +5,12 @@ header{
   background: white;
 }
 
+.title__link{
+  position: absolute;
+  width: clamp(2.8125em, 15vw, 58px); //45/16 72/16
+  aspect-ratio: 1/1.30555556;
+}
+
 .header__title{
   width: clamp(2.8125em, 15vw, 58px); //45/16 72/16
   aspect-ratio: 1/1.30555556;

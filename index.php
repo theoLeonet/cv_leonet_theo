@@ -14,6 +14,7 @@
     CV de Théo Léonet
 </h1>
 <header>
+    <a href="" class="title__link"></a>
     <h2 class="header__title">
         WDF
     </h2>
@@ -134,7 +135,7 @@
         <?php endfor; ?>
     </ul>
 </section>
-    <section class="did-you-know">
+<section class="did-you-know">
         <h2 class="hidden">
             Le saviez vous?
         </h2>
@@ -408,6 +409,6 @@
         </ul>
     </div>
 </footer>
-//<script src="dist/js/Main.js"></script>
+<script src="dist/js/Main.js"></script>
 </body>
 </html>
