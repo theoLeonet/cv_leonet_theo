@@ -4,9 +4,24 @@
 }
 
 .engagement__title{
+  display: flex;
+  margin-left: 30px;
+
   font-family: "bebas neue pro", sans-serif;
   font-size: 1.25em; //20/16
+  font-weight: bold;
   text-transform: uppercase;
+
+  &:before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    margin-left: -30px;
+    align-self: center;
+
+    background: black;
+  }
 }
 
 .engagement__desc{
@@ -29,6 +44,7 @@
 
 .engagement__info__title{
   font-family: "bebas neue pro", sans-serif;
+  font-weight: bold;
   font-size: 3.4375em; //55/16
 }
 
