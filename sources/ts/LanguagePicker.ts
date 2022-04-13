@@ -39,8 +39,8 @@ export class LanguagePicker {
 
         this.options.forEach((option:HTMLLIElement)=>{
             option.addEventListener('click', ()=>{
-                this.options.forEach((option:HTMLLIElement)=>option.classList.remove('is-selected'));
-                option.classList.add('is-selected');
+                this.options.forEach((option:HTMLLIElement)=>option.querySelector('a').classList.remove('is-selected'));
+                option.querySelector('a').classList.add('is-selected');
             })
         })
     }
