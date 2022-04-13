@@ -50,11 +50,6 @@
   line-height: 1.866;
 }
 
-.slide__btn__share{
-  width: max-content;
-  margin: 3.75em auto 0; //60/16
-}
-
 .slider__dots{
   display: block;
   margin: 2.5em auto; //40/16
@@ -85,5 +80,55 @@
 
   .right-arrow__btn{
     margin: 10.625em 0 0  calc(clamp(256px, 80vw, 960px) - 40px); //170/16
+  }
+}
+
+.slide__btn__share{
+  width: max-content;
+  margin: 2.5em auto 0; //290/20 160/20
+
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 1.25em; //20/16
+  font-weight: bold;
+  letter-spacing: 0.06em; //1.2/20
+  text-transform: uppercase;
+
+  color: black;
+}
+
+.slide__socials{
+  width: max-content;
+  display: flex;
+  gap: 1em;
+  margin: 1em auto 0;
+}
+
+.Facebook--black{
+  background: url("/sources/pictures/original/icons/facebook_logo_black.svg") no-repeat;
+}
+.Twitter--black{
+  background: url("/sources/pictures/original/icons/twitter_logo_black.svg") no-repeat;
+}
+.Instagram--black{
+  background: url("/sources/pictures/original/icons/instagram_logo_black.svg") no-repeat;
+}
+.Linkedin--black{
+  background: url("/sources/pictures/original/icons/linkedin_logo_black.svg") no-repeat;
+}
+
+.slide__socials__link{
+  align-self: center;
+  width: 1.45454545em; //16/11
+  aspect-ratio: 1/1; //16/11
+  overflow: hidden;
+
+  color: transparent;
+  background-position: center;
+  background-size: contain;
+  opacity: .5;
+
+  &:hover{
+    cursor: pointer;
+    opacity: 1;
   }
 }

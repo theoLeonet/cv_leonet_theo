@@ -35,10 +35,12 @@
             <li class="sec-nav__socials__follow">
                 Nous suivre
             </li>
-            <?php for($i = 0; $i < count($sec_nav['socials']['links']); $i++): ?><li class="sec-nav__socials__link <?= $sec_nav['socials']['texts'][$i] ?>">
+            <?php for($i = 0; $i < count($sec_nav['socials']['links']); $i++): ?>
+            <li class="sec-nav__socials__link <?= $sec_nav['socials']['texts'][$i] ?>--gray">
                 <a href="<?= $sec_nav['socials']['links'][$i] ?>">
                     <?= $sec_nav['socials']['texts'][$i] ?>
-                </a></li>
+                </a>
+            </li>
             <?php endfor; ?>
         </ul>
         <ul class="sec-nav__sec-menu">
@@ -113,9 +115,16 @@
         </p>
     </div>
     <?php endfor; ?>
-    <p class="intro__btn__share btn__share">
+    <p class="intro__btn__share">
         Je partage
     </p>
+    <ul class="intro__socials">
+        <?php for($i = 0; $i < count($intro['socials']['links']); $i++): ?>
+        <li class="intro__socials__link <?= $intro['socials']['texts'][$i] ?>--white">
+            <a href="<?= $intro['socials']['links'][$i] ?>"><?= $intro['socials']['texts'][$i] ?></a>
+        </li>
+        <?php endfor; ?>
+    </ul>
 </section>
 <section class="about">
     <h2 class="about__title">
@@ -160,11 +169,16 @@
                         <p class="slide__text">
                             <?= $did_you_know['texts'][$i] ?>
                         </p>
-                        <div class="slide__btn__share btn__share">
-                            <p>
-                                Je partage
-                            </p>
-                        </div>
+                        <p class="slide__btn__share">
+                            Je partage
+                        </p>
+                        <ul class="slide__socials">
+                            <?php for($i = 0; $i < count($intro['socials']['links']); $i++): ?>
+                                <li class="slide__socials__link <?= $intro['socials']['texts'][$i] ?>--black">
+                                    <a href="<?= $intro['socials']['links'][$i] ?>"><?= $intro['socials']['texts'][$i] ?></a>
+                                </li>
+                            <?php endfor; ?>
+                        </ul>
                     </article>
                 <?php endfor; ?>
             </div>

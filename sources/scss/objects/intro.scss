@@ -47,5 +47,50 @@
 
 .intro__btn__share{
   width: max-content;
-  margin: 14.5em auto 8em; //290/20 160/20
+  margin: 14.5em auto 0; //290/20 160/20
+
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 1.25em; //20/16
+  font-weight: bold;
+  letter-spacing: 0.06em; //1.2/20
+  text-transform: uppercase;
+
+  color: white;
+}
+
+.intro__socials{
+  width: max-content;
+  display: flex;
+  gap: 1em;
+  margin: 1em auto 8em;
+}
+
+.Facebook--white{
+  background: url("/sources/pictures/original/icons/facebook_logo_white.svg") no-repeat;
+}
+.Twitter--white{
+  background: url("/sources/pictures/original/icons/twitter_logo_white.svg") no-repeat;
+}
+.Instagram--white{
+  background: url("/sources/pictures/original/icons/instagram_logo_white.svg") no-repeat;
+}
+.Linkedin--white{
+  background: url("/sources/pictures/original/icons/linkedin_logo_white.svg") no-repeat;
+}
+
+.intro__socials__link{
+  align-self: center;
+  width: 1.45454545em; //16/11
+  aspect-ratio: 1/1; //16/11
+  overflow: hidden;
+
+  color: transparent;
+  background-position: center;
+  background-size: contain;
+  opacity: .5;
+
+  &:hover{
+    cursor: pointer;
+    opacity: 1;
+  }
 }

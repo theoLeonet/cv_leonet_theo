@@ -58,6 +58,20 @@ $intro = [
         'C’est son nombre d’années d’expérience dans le domaine du design web.',
         'C’est le nombre de projets qu’il à réalisé. En 6 ans, on peut dire qu’il est plutôt productif.'
     ],
+    'socials' => [
+        'texts' => [
+            'Twitter',
+            'Facebook',
+            'Instagram',
+            'Linkedin',
+        ],
+        'links' => [
+            'https://twitter.com',
+            'https://facebook.com',
+            'https://instagram.com',
+            'https://linkedin.com',
+        ],
+    ],
 ];
 $about = [
     'subtitles' => [
