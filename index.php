@@ -130,19 +130,19 @@
     <h2 class="about__title">
         THÉO
     </h2>
-    <img src="/sources/pictures/original/shrek.png" alt="shrek" class="about__image">
-    <ul class="about__infos">
+    <img src="/sources/pictures/original/me.png" alt="shrek" class="about__image">
+    <dl class="about__infos">
         <?php for($i=0; $i<count($about['subtitles']); $i++):?>
-        <li class="infos__info">
-            <h3 class="about__info__title">
+        <div class="infos__info">
+            <dt class="about__info__title">
                 <?= $about['subtitles'][$i] ?>
-            </h3>
-            <p class="about__info__sub">
+            </dt>
+            <dd class="about__info__sub">
                 <?= $about['texts'][$i] ?>
-            </p>
-        </li>
+            </dd>
+        </div>
         <?php endfor; ?>
-    </ul>
+    </dl>
 </section>
 <section class="did-you-know">
         <h2 class="hidden">

@@ -9,7 +9,7 @@
 }
 
 .about__image{
-  width: clamp(12.5em ,30vw, 31.25em); //200/16 500/16
+  width: clamp(12.5em ,50vw, 31.25em); //200/16 500/16
 }
 
 .about__title{
@@ -98,6 +98,6 @@
 
   .about__title{
     position: absolute;
-    top: 400px;
+    top: 375px;
   }
 }
