@@ -1,14 +1,25 @@
 header{
+  position: fixed;
+  top: 0;
   display: grid;
   width: 80%;
   padding: 1.25em 10%; //20/16
   background: white;
 }
 
+.header--open{
+  animation: open--header forwards 500ms;
+}
+
+.header--close{
+  animation: close--header forwards 500ms;
+}
+
 .title__link{
   position: absolute;
   width: clamp(2.8125em, 15vw, 58px); //45/16 72/16
   aspect-ratio: 1/1.30555556;
+  margin: 1.25em 0 0 10%;
 }
 
 .header__title{
@@ -58,6 +69,7 @@ header{
   display: flex;
 }
 
+
 .Facebook{
   background: url("/sources/pictures/original/icons/facebook_logo.svg") no-repeat;
 }
@@ -83,6 +95,12 @@ header{
   color: transparent;
   background-position: center;
   background-size: contain;
+  opacity: .5;
+
+  &:hover{
+    cursor: pointer;
+    opacity: 1;
+  }
 }
 
 .sec-menu__search{
@@ -229,14 +247,14 @@ header{
 
 }
 
-@keyframes open {
+/*@keyframes open {
   100%{
     height: clamp(0em, 93vh, 450px); //744/16
     padding-bottom: clamp(100px, calc(100vh - clamp(0em, 93vh, 450px)), 10000px); //744/16
   }
-}
+}*/
 
-@keyframes close {
+/*@keyframes close {
   0%{
     height: clamp(0em, 93vh, 46.5em);
     padding-bottom: clamp(100px, calc(100vh - clamp(0em, 93vh, 46.5em)), 10000px); //744/16
@@ -244,5 +262,23 @@ header{
   100%{
     height: clamp(3.9375em, 19.6875vw, 5.875em); //63/16 94/16
     padding-bottom: 1.25em;
+  }
+}*/
+
+@keyframes open--header {
+  0%{
+    transform: translate(0, -100%);
+  }
+  100%{
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes close--header {
+  0%{
+    transform: translate(0, 0);
+  }
+  100%{
+    transform: translate(0, -100%);
   }
 }

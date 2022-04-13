@@ -1,5 +1,6 @@
 import {LanguagePicker} from "./LanguagePicker";
 import {SearchBar} from "./SearchBar";
+import {Header} from "./Header";
 
 const backgroundVideo: HTMLVideoElement = document.querySelector('.background__video') as HTMLVideoElement;
 const about: HTMLElement = document.querySelector('.about') as HTMLElement;
@@ -10,6 +11,7 @@ const burgerMenuIcon: HTMLDivElement = document.querySelector('.burger-menu__ico
 const header: HTMLElement = document.querySelector('header') as HTMLElement;
 const languagePicker = new LanguagePicker();
 const search = new SearchBar();
+const headerClass = new Header();
 
 let burgerOpen: boolean = false;
 

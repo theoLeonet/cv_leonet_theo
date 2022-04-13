@@ -28,8 +28,12 @@
   font-family: "bebas neue pro", sans-serif;
   font-size: 20px;
 
-  background: blue;
+  background: $turquoise;
   color: white;
+
+  &:hover{
+    background: $dark_turquoise;
+  }
 }
 
 .search__button--close{
@@ -37,6 +41,11 @@
 
   font-family: "bebas neue pro", sans-serif;
   font-size: 20px;
+
+  &:hover{
+    text-decoration: underline;
+    color: $orange;
+  }
 }
 
 .search__dropdown__text{
