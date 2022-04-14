@@ -5,6 +5,7 @@ require('sources/PHP/content.php')
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="stylesheet" type="text/css" href="sources/scss/objects/projects.scss"/>
     <link rel="stylesheet" type="text/css" href="sources/scss/objects/did_you_know.scss"/>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/dist/css/main.css">
@@ -216,6 +217,13 @@ require('sources/PHP/content.php')
     </p>
     <?php for ($i = 0; $i < count($projects['names']); $i++): ?>
         <div class="projects__project">
+            <div class="inner__container">
+                <div class="project__inner">
+                    <p class="inner__title">Titre de projet</p>
+                    <p class="inner__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aut doloremque dolorum error, ex harum hic ipsam laborum, magni maiores maxime molestiae nemo porro provident quidem quis sed, voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dignissimos optio possimus temporibus unde! Aperiam autem,</p>
+                    <a href="#" class="inner__more">En savoir plus sur ce projet</a>
+                </div>
+            </div>
             <img src="<?= $projects['images__src'][$i] ?>"
                  srcset="<?= $projects['images__srcset'][$i] ?>"
                  alt="<?= $projects['images__alt'][$i] ?>"

@@ -1,4 +1,5 @@
 .projects{
+  position: relative;
   display: grid;
   grid-gap: 2.5em; //40/16
   width: 85%;
@@ -20,13 +21,81 @@
 .projects__project{
   display: flex;
   flex-direction: column;
+
+  &:hover{
+    .project__name{
+      margin-top: -90px;
+      opacity: 0;
+    }
+
+    .inner__container{
+      opacity: 1;
+      margin-top: 20px;
+    }
+  }
+
+  .inner__container{
+    transition-property: opacity, margin-top;
+    transition-duration: 300ms;
+    position: absolute;
+    width: calc(85vw / 2 - 60px);
+    aspect-ratio: 1.48/1;
+    margin: 0px 20px;
+    background: black;
+    color: white;
+    opacity: 0;
+    display: grid;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+.project__inner {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  gap: 2em;
+
+}
+
+.inner__title{
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.inner__description{
+  font-family: "open sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.86;
+}
+
+.inner__more{
+  font-family: "bebas neue pro", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+
+  &:after{
+    transition: margin-left 300ms;
+    content: url("../../pictures/original/icons/right-arrow-white.svg");
+    margin-left: 10px;
+  }
+
+  &:hover{
+    &:after{
+      margin-left: 20px;
+    }
+  }
 }
 
 .project__image{
   width: 100%;
+  aspect-ratio: 1.4320987654/1;
 }
 
 .project__name{
+  transition-property: opacity, margin-top;
+  transition-duration: 300ms;
   width: max-content;
   align-self: flex-end;
   padding: 1em 1.5em;
