@@ -9,7 +9,19 @@
 .latest__title{
   font-family: "bebas neue pro", sans-serif;
   font-size: 1.375em; //22/16
-  margin-left: 5%;
+  margin-left: calc(5% + 30px);
+  display: flex;
+
+  &:before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    margin-left: -30px;
+    align-self: center;
+
+    background: white;
+  }
 }
 
 .latest__articles{
@@ -64,18 +76,36 @@
 }
 
 .latest__all{
-  justify-self: end;
-  margin-right: 5%;
-
+  margin-left: calc(95% - 200px);
   font-family: "bebas neue pro", sans-serif;
   font-size: 1.25em; //20/16
   font-weight: bold;
   text-transform: uppercase;
+
+  &:after{
+    transition: margin-left 300ms;
+    content: url("../../pictures/original/icons/right-arrow-white.svg");
+    margin-left: 10px;
+  }
+
+  &:hover{
+    &:after{
+      margin-left: 20px;
+    }
+  }
+}
+
+
+.article__link{
+  position: absolute;
+  width: calc(90%/3 - 32px);
+  aspect-ratio: 1.0638297872/1;
 }
 
 @media screen and (max-width: 600px){
   .latest__title, .latest__all{
     justify-self: center;
+    margin-left: 0;
   }
 }
 

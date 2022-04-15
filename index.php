@@ -220,7 +220,10 @@ require('sources/PHP/content.php')
             <div class="inner__container">
                 <div class="project__inner">
                     <p class="inner__title">Titre de projet</p>
-                    <p class="inner__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aut doloremque dolorum error, ex harum hic ipsam laborum, magni maiores maxime molestiae nemo porro provident quidem quis sed, voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dignissimos optio possimus temporibus unde! Aperiam autem,</p>
+                    <p class="inner__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aut
+                        doloremque dolorum error, ex harum hic ipsam laborum, magni maiores maxime molestiae nemo porro
+                        provident quidem quis sed, voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Debitis dignissimos optio possimus temporibus unde! Aperiam autem,</p>
                     <a href="#" class="inner__more">En savoir plus sur ce projet</a>
                 </div>
             </div>
@@ -267,7 +270,9 @@ require('sources/PHP/content.php')
         Images des projets
     </h2>
     <?php for ($i = 0; $i < count($pictures['src']); $i++): ?>
-        <img class="projects__images__image" src="<?= $pictures['src'][$i] ?>" alt="<?= $pictures['alt'][$i] ?>">
+        <a href="#" class="projects__images__link">
+            <img class="projects__images__image" src="<?= $pictures['src'][$i] ?>" alt="<?= $pictures['alt'][$i] ?>">
+        </a>
     <?php endfor; ?>
 </section>
 <section class="latest">
@@ -277,6 +282,7 @@ require('sources/PHP/content.php')
     <div class="latest__articles">
         <?php for ($i = 0; $i < count($latest['titles']); $i++): ?>
             <article class="latest__article">
+                <a href="#" class="article__link"></a>
                 <h3 class="latest__article__title">
                     <?= $latest['titles'][$i] ?>
                 </h3>
@@ -296,7 +302,7 @@ require('sources/PHP/content.php')
         <?php endfor; ?>
     </div>
     <a href="#" class="latest__all">
-        Toutes les actualités.
+        Toutes les actualités
     </a>
 </section>
 <section class="newsletter">
