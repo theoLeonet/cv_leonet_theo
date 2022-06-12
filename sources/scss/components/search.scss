@@ -74,7 +74,27 @@
   animation: close forwards 500ms;
 }
 
+
+@media screen and (max-width: 1200px) {
+  .search__dropdown__container{
+    overflow: visible;
+  }
+
+  .search__dropdown{
+    display: grid;
+    text-align: center;
+  }
+
+  .search__dropdown__text{
+    margin: 0;
+  }
+}
+
 @keyframes open {
+  0%{
+    max-height: 0;
+    overflow: hidden;
+  }
   100%{
     max-height: 100px;
   }
@@ -86,5 +106,6 @@
   }
   100%{
     max-height: 0;
+    overflow: hidden;
   }
 }

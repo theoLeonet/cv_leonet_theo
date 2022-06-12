@@ -5,8 +5,6 @@ require('sources/PHP/content.php')
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" type="text/css" href="sources/scss/objects/projects.scss"/>
-    <link rel="stylesheet" type="text/css" href="sources/scss/objects/did_you_know.scss"/>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/dist/css/main.css">
     <title>CV de Théo Léonet</title>
@@ -20,77 +18,83 @@ require('sources/PHP/content.php')
     <h2 class="header__title">
         WDF
     </h2>
-    <nav class="sec-nav">
-        <h3 class="hidden">
-            Navigation secondaire
-        </h3>
-        <ul class="sec-nav__main-menu">
-            <?php for ($i = 0; $i < count($sec_nav['main_menu']['links']); $i++): ?>
-                <li class="sec-nav__main-menu__link">
-                    <a href="<?= $sec_nav['main_menu']['links'][$i] ?>">
-                        <?= $sec_nav['main_menu']['texts'][$i] ?>
-                    </a>
-                </li>
-            <?php endfor; ?>
-        </ul>
-        <ul class="sec-nav__socials">
-            <li class="sec-nav__socials__follow">
-                Nous suivre
-            </li>
-            <?php for ($i = 0; $i < count($sec_nav['socials']['links']); $i++): ?>
-                <li class="sec-nav__socials__link <?= $sec_nav['socials']['texts'][$i] ?>--gray">
-                    <a href="<?= $sec_nav['socials']['links'][$i] ?>">
-                        <?= $sec_nav['socials']['texts'][$i] ?>
-                    </a>
-                </li>
-            <?php endfor; ?>
-        </ul>
-        <ul class="sec-nav__sec-menu">
-            <li>
-                <a href="#" class="sec-menu__newsletter">
-                    S'inscrire à la newsletter
-                </a>
-            </li>
-            <li class="sec-menu__search">
-                <a href="" class="search__link"> Recherche </a>
-                <div class="search__dropdown__container">
-                    <div class="search__dropdown">
-                        <p class="search__dropdown__text">Chercher</p>
-                        <form action="#" class="search__dropdown__form">
-                            <label for="search__input" class="search__input__label hidden">Rechercher</label>
-                            <input type="search" id="search__input">
-                            <button class="search__button">Rechercher</button>
+    <input type="checkbox" name="burger-menu__icon" id="burger-menu__icon" class="burger-menu__icon__input">
+    <label class="burger-menu__icon" for="burger-menu__icon">
+        <div class="navs">
+            <nav class="sec-nav">
+                <h3 class="hidden">
+                    Navigation secondaire
+                </h3>
+                <ul class="sec-nav__main-menu">
+                    <?php for ($i = 0; $i < count($sec_nav['main_menu']['links']); $i++): ?>
+                        <li class="sec-nav__main-menu__link">
+                            <a href="<?= $sec_nav['main_menu']['links'][$i] ?>">
+                                <?= $sec_nav['main_menu']['texts'][$i] ?>
+                            </a>
+                        </li>
+                    <?php endfor; ?>
+                </ul>
+                <ul class="sec-nav__socials">
+                    <li class="sec-nav__socials__follow">
+                        Nous suivre
+                    </li>
+                    <?php for ($i = 0; $i < count($sec_nav['socials']['links']); $i++): ?>
+                        <li class="sec-nav__socials__link <?= $sec_nav['socials']['texts'][$i] ?>--gray">
+                            <a href="<?= $sec_nav['socials']['links'][$i] ?>">
+                                <?= $sec_nav['socials']['texts'][$i] ?>
+                            </a>
+                        </li>
+                    <?php endfor; ?>
+                </ul>
+                <ul class="sec-nav__sec-menu">
+                    <li>
+                        <a href="#" class="sec-menu__newsletter">
+                            S'inscrire à la newsletter
+                        </a>
+                    </li>
+                    <li class="sec-menu__search">
+                        <a href="" class="search__link"> Rechercher </a>
+                        <div class="search__dropdown__container">
+                            <div class="search__dropdown">
+                                <p class="search__dropdown__text">Chercher</p>
+                                <form action="#" class="search__dropdown__form">
+                                    <label for="search__input" class="search__input__label hidden">Rechercher</label>
+                                    <input type="search" id="search__input">
+                                    <button class="search__button">Rechercher</button>
+                                </form>
+                                <button class="search__button--close">Fermer</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sec-menu__language">
+                        <form action="#" class="language-picker__form">
+                            <label for="language-picker__select" class="language-picker__label">
+                                <select name="language-picker__select" id="language-picker__select">
+                                    <option value="" class="select__option french">Francais</option>
+                                    <option value="" class="select__option english">English</option>
+                                </select>
+                            </label>
                         </form>
-                        <button class="search__button--close">Fermer</button>
-                    </div>
-                </div>
-            </li>
-            <li class="sec-menu__language">
-                <form action="#" class="language-picker__form">
-                    <label for="language-picker__select" class="language-picker__label">
-                        <select name="language-picker__select" id="language-picker__select">
-                            <option value="" class="select__option french">Francais</option>
-                            <option value="" class="select__option english">English</option>
-                        </select>
-                    </label>
-                </form>
-            </li>
-        </ul>
-    </nav>
-    <nav class="main-nav">
-        <h3 class="hidden">
-            Navigation principale
-        </h3>
-        <ul class="main-nav__main-menu">
-            <?php for ($i = 0; $i < count($main_nav['main_menu']['links']); $i++): ?>
-                <li class="main-nav__main-menu__link">
-                    <a href="<?= $main_nav['main_menu']['links'][$i] ?>">
-                        <?= $main_nav['main_menu']['texts'][$i] ?>
-                    </a></li>
-            <?php endfor; ?>
-        </ul>
-    </nav>
-    <div class="burger-menu__icon"></div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="main-nav">
+                <h3 class="hidden">
+                    Navigation principale
+                </h3>
+                <ul class="main-nav__main-menu">
+                    <?php for ($i = 0; $i < count($main_nav['main_menu']['links']); $i++): ?>
+                        <li class="main-nav__main-menu__link">
+                            <a href="<?= $main_nav['main_menu']['links'][$i] ?>">
+                                <?= $main_nav['main_menu']['texts'][$i] ?>
+                            </a>
+                        </li>
+                    <?php endfor; ?>
+                    <?php ?>
+                </ul>
+            </nav>
+        </div>
+    </label>
 </header>
 <video class="background__video" autoplay loop muted>
     <source
@@ -106,7 +110,7 @@ require('sources/PHP/content.php')
         Fondateur de la WDF
     </p>
     <p class="intro__description">
-        Théo Léonet est un jeune homme de 24 ans qui à décidé il y a maintenant 3 ans d’en finir avec la pénurie des
+        Théo Léonet est un jeune homme de 24 ans qui a décidé il y a maintenant 3 ans d’en finir avec la pénurie des
         métiers du web. C’est ainsi que la WDF est née.
     </p>
     <?php for ($i = 0; $i < count($intro['numbers']); $i++): ?>
@@ -213,17 +217,18 @@ require('sources/PHP/content.php')
     </h2>
     <p class="projects__sub">
         Si vous cherchez de l’inspiration, vous êtes au bon endroit. Avec un total de 45 projets, vous devriez trouver
-        quelque chose qui vous plaît. Voici ses quatres projets les plus récents.
+        quelque chose qui vous plaît. Voici ses trois projets les plus récents.
     </p>
     <?php for ($i = 0; $i < count($projects['names']); $i++): ?>
         <div class="projects__project">
             <div class="inner__container">
                 <div class="project__inner">
-                    <p class="inner__title">Titre de projet</p>
-                    <p class="inner__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aut
-                        doloremque dolorum error, ex harum hic ipsam laborum, magni maiores maxime molestiae nemo porro
-                        provident quidem quis sed, voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Debitis dignissimos optio possimus temporibus unde! Aperiam autem,</p>
+                    <p class="inner__title">
+                        <?= $projects['names'][$i] ?>
+                    </p>
+                    <p class="inner__description">
+                        <?= $projects['excerpt'][$i] ?>
+                    </p>
                     <a href="#" class="inner__more">En savoir plus sur ce projet</a>
                 </div>
             </div>
@@ -286,12 +291,14 @@ require('sources/PHP/content.php')
                 <h3 class="latest__article__title">
                     <?= $latest['titles'][$i] ?>
                 </h3>
-                <img
-                        src="<?= $latest['images__src'][$i] ?>"
-                        srcset="<?= $latest['images__srcset'][$i] ?>"
-                        sizes="<?= $latest['images__sizes'] ?>"
-                        alt="<?= $latest['images__alt'][$i] ?>"
-                        class="latest__article__image">
+                <div class="latest__article__image__container">
+                    <img
+                            src="<?= $latest['images__src'][$i] ?>"
+                            srcset="<?= $latest['images__srcset'][$i] ?>"
+                            sizes="<?= $latest['images__sizes'] ?>"
+                            alt="<?= $latest['images__alt'][$i] ?>"
+                            class="latest__article__image">
+                </div>
                 <p class="latest__article__sub">
                     <?= $latest['subtitles'][$i] ?>
                 </p>
@@ -317,11 +324,11 @@ require('sources/PHP/content.php')
             </a>
         </div>
         <p class="newsletter__socials__intro">
-            Retrouvez aussi toute l’actualité du WDF sur :
+            Retrouvez aussi toute l’actualité WDF sur :
         </p>
         <ul class="newsletter__socials">
             <?php for ($i = 0; $i < count($newsletter['socials']['links']); $i++): ?>
-                <li class="newsletter__socials__social <?= $newsletter['socials']['texts'][$i] ?>">
+                <li class="newsletter__socials__social <?= $newsletter['socials']['texts'][$i] ?>__newsletter">
                     <a href="<?= $newsletter['socials']['links'][$i] ?>">
                         <?= $newsletter['socials']['texts'][$i] ?>
                     </a>
@@ -351,7 +358,7 @@ require('sources/PHP/content.php')
     </h2>
     <p class="subscribe__text">
         C’est en suivant une ou plusieurs de nos nombreuses formations que vous pourrez faire la différence. Grâce à
-        vous les métiers du web pourraient cesser d’être en pénurie. Vous pourriez vous-même devenir conseiller WDF et
+        vous, les métiers du web pourraient cesser d’être en pénurie. Vous pourriez vous-même devenir conseiller WDF et
         aider des centaines de personnes à rejoindre le mouvement.
     </p>
     <div class="subscribe__btn">
@@ -372,7 +379,7 @@ require('sources/PHP/content.php')
     </div>
     <aside class="wdf__numbers">
         <h3 class="numbers__title">
-            LE WDF EN QUELQUES CHIFFRES C’EST
+            LA WDF EN QUELQUES CHIFFRES C’EST
         </h3>
         <?php for ($i = 0; $i < count($wdf__infos['numbers']); $i++): ?>
             <div class="numbers__infos">
@@ -399,13 +406,22 @@ require('sources/PHP/content.php')
             </li>
         <?php endfor; ?>
     </ul>
+    <ul class="useful__links--orange">
+        <?php for ($i = 0; $i < count($useful['orange-links']); $i++): ?>
+            <li class="useful__link">
+                <a href="<?= $useful['orange-links'][$i] ?>">
+                    <?= $useful['orange-texts'][$i] ?>
+                </a>
+            </li>
+        <?php endfor; ?>
+    </ul>
     <div class="useful__follow">
         <p class="useful__follow__intro">
             Nous suivre
         </p>
         <ul class="useful__follow__links">
             <?php for ($i = 0; $i < count($useful['socials']['links']); $i++): ?>
-                <li class="useful__follow__link <?= $useful['socials']['texts'][$i] ?>">
+                <li class="useful__follow__link <?= $useful['socials']['texts'][$i] ?>--useful">
                     <a href="<?= $useful['socials']['links'][$i] ?>">
                         <?= $useful['socials']['texts'][$i] ?>
                     </a>
@@ -425,19 +441,17 @@ require('sources/PHP/content.php')
                 </li>
             <?php endfor; ?>
         </ul>
-        <ul class="footer__logos">
-            <?php for ($i = 0; $i < count($footer['logos']['links']); $i++): ?>
-                <li class="footer__logo">
-                    <a href="<?= $footer['logos']['links'][$i] ?>">
-                        <img src="<?= $footer['logos']['images__src'][$i] ?>"
-                             alt="<?= $footer['logos']['images__alt'][$i] ?>">
-                    </a>
-                </li>
-            <?php endfor; ?>
-        </ul>
-        <a class="footer__language" href="#">
-            FR
-        </a>
+        <div class="footer__language">
+            <form action="#" class="language-picker__form">
+                <label for="language-picker__select" class="language-picker__label">
+                    <select name="language-picker__select" id="language-picker__select">
+                        <option value="" class="select__option french">Francais</option>
+                        <option value="" class="select__option english">English</option>
+                    </select>
+                </label>
+            </form>
+        </div>
+
     </div>
     <div class="footer__sec">
         <ul class="footer__infos">

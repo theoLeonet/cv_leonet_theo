@@ -32,16 +32,31 @@
 }
 
 .latest__article{
+  position: relative;
   display: grid;
   grid-template: repeat(3, max-content) /repeat(2, 1fr);
+
+  &:hover{
+    .latest__article__image{
+      transition: 300ms;
+      transform: scale(1.25);
+    }
+  }
+}
+
+.latest__article__image__container{
+  order: 0;
+  grid-area: 1/1/2/-1;
+  width: 100%;
+  aspect-ratio: 1.4981273408/1;
+  margin-bottom: 1.25em; //20/16
+  overflow: hidden;
 }
 
 .latest__article__image{
-  order: 0;
-
-  grid-area: 1/1/2/-1;
   width: 100%;
-  margin-bottom: 1.25em; //20/16
+  transition: 300ms;
+  transform: scale(1);
 }
 
 .latest__article__sub{
@@ -84,7 +99,7 @@
 
   &:after{
     transition: margin-left 300ms;
-    content: url("../../pictures/original/icons/right-arrow-white.svg");
+    content: url("/sources/pictures/original/icons/youtube_logo.svg");
     margin-left: 10px;
   }
 
@@ -95,11 +110,9 @@
   }
 }
 
-
 .article__link{
   position: absolute;
-  width: calc(90%/3 - 32px);
-  aspect-ratio: 1.0638297872/1;
+  inset: 0;
 }
 
 @media screen and (max-width: 600px){

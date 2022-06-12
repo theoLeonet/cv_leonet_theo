@@ -3,7 +3,7 @@
   display: grid;
   grid-gap: 2.5em; //40/16
   width: 85%;
-  margin: 4.375em auto; //70/16
+  margin: 4.75em auto; //70/16
 }
 
 .projects__title{
@@ -21,16 +21,21 @@
 .projects__project{
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+  min-width: 100%;
+  aspect-ratio: 1.25/1;
+  margin-bottom: 2.5em;
 
   &:hover{
     .project__name{
       margin-top: -90px;
       opacity: 0;
+      z-index: -1;
     }
 
     .inner__container{
       opacity: 1;
-      margin-top: 20px;
     }
   }
 
@@ -38,9 +43,9 @@
     transition-property: opacity, margin-top;
     transition-duration: 300ms;
     position: absolute;
-    width: calc(85vw / 2 - 60px);
-    aspect-ratio: 1.48/1;
-    margin: 0px 20px;
+    width: 100%;
+    aspect-ratio: 1.4320987654/1;
+
     background: black;
     color: white;
     opacity: 0;
@@ -89,11 +94,12 @@
 }
 
 .project__image{
-  width: 100%;
-  aspect-ratio: 1.4320987654/1;
+  width: 100% * 1.25;
 }
 
 .project__name{
+  position: relative;
+  z-index: 1;
   transition-property: opacity, margin-top;
   transition-duration: 300ms;
   width: max-content;
@@ -112,6 +118,12 @@
 @media screen and (min-width: 1021px) {
   .projects{
     grid-template-columns: repeat(2, 1fr);
+
+    .inner__container{
+      width: 90%;
+      aspect-ratio: 1.4320987654/1;
+      margin: calc(5%/1.4320987654) 5%;
+    }
   }
 
   .projects__sub{
@@ -125,9 +137,5 @@
 
   .projects__project:nth-child(even){
     grid-column: 2/3;
-  }
-
-  .projects__project:nth-child(n+5){
-    margin-top: 6em; //96/16
   }
 }

@@ -27,14 +27,18 @@
 }
 
 .subscribe__btn{
+  transition: box-shadow 200ms;
   width: max-content;
-  margin: 0 auto;
+  margin: 3em auto; //90/30
   padding: .5em 1em;
-  margin-top: 3em; //90/30
 
   font-family: "bebas neue pro", sans-serif;
   font-size: 1.875em; //30/16
   text-transform: uppercase;
 
   background: $orange;
+
+  &:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, .5);
+  }
 }

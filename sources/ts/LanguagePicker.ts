@@ -1,5 +1,5 @@
 export class LanguagePicker {
-    private container: HTMLLIElement;
+    private container: HTMLElement;
     private button: HTMLButtonElement;
     private dropdown: HTMLDivElement;
     private srIntro: HTMLParagraphElement;
@@ -7,9 +7,9 @@ export class LanguagePicker {
     private list: HTMLUListElement;
     private language: string;
 
-    constructor() {
+    constructor(container: HTMLElement) {
 
-        this.container = document.querySelector('.sec-menu__language') as HTMLLIElement;
+        this.container = container;
         this.container.innerHTML = '';
         this.container.insertAdjacentHTML('beforeend', `
             <button class="sr-intro language-picker__button">FR</button>

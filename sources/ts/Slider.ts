@@ -20,14 +20,14 @@ export class Slider {
 
     private addEventListeners() {
         this.leftArrow.addEventListener('click', () => {
-            !this.position ? this.position = -960 * 4 : this.position += this.clamp(256, (innerWidth/100)*80, 960 );
+            !this.position ? this.position = -960 * (this.dots.length - 1) : this.position += this.clamp(256, (innerWidth/100)*80, 960 );
             this.slider.style.left = this.position + 'px';
 
             this.colorDots();
         })
 
         this.rightArrow.addEventListener('click', () => {
-            this.position <= -(960 * 4)? this.position = 0 : this.position -= this.clamp(256, (innerWidth/100)*80, 960 );
+            this.position <= -(960 * (this.dots.length - 1))? this.position = 0 : this.position -= this.clamp(256, (innerWidth/100)*80, 960 );
             this.slider.style.left = this.position + 'px';
 
             this.colorDots();

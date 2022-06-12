@@ -22,6 +22,7 @@
 }
 
 .newsletter__sub-btn{
+  transition: box-shadow 200ms;
   width: max-content;
   margin-top: 3.2em; //64/20
   padding: .7em 1em;
@@ -34,6 +35,10 @@
 
   color: white;
   background: $orange;
+
+  &:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  }
 }
 
 .newsletter__socials__intro{
@@ -50,25 +55,37 @@
 
 }
 
-.newsletter__socials__social{
-  .Facebook{
-    background: url("/sources/pictures/original/icons/facebook_logo_gray.svg") no-repeat;
-  }
-  .Twitter{
-    background: url("/sources/pictures/original/icons/twitter_logo_gray.svg") no-repeat;
-  }
-  .Instagram{
-    background: url("/sources/pictures/original/icons/instagram_logo_gray.svg") no-repeat;
-  }
-  .Youtube{
-    background: url("/sources/pictures/original/icons/youtube_logo.svg") no-repeat;
-  }
-  .Linkedin{
-    background: url("/sources/pictures/original/icons/linkedin_logo_gray.svg") no-repeat;
-  }
+.Facebook__newsletter{
+  background: url("/sources/pictures/original/icons/facebook_logo_gray.svg") no-repeat;
 
+  &:hover{
+    background: url("/sources/pictures/original/icons/facebook_logo_orange.svg") no-repeat;
+  }
+}
+.Twitter__newsletter{
+  background: url("/sources/pictures/original/icons/twitter_logo_gray.svg") no-repeat;
+
+  &:hover{
+    background: url("/sources/pictures/original/icons/twitter_logo_orange.svg") no-repeat;
+  }
+}
+.Instagram__newsletter{
+  background: url("/sources/pictures/original/icons/instagram_logo_gray.svg") no-repeat;
+
+  &:hover{
+    background: url("/sources/pictures/original/icons/instagram_logo_orange.svg") no-repeat;
+  }
+}
+.Linkedin__newsletter{
+  background: url("/sources/pictures/original/icons/linkedin_logo_gray.svg") no-repeat;
+
+  &:hover{
+    background: url("/sources/pictures/original/icons/linkedin_logo_orange.svg") no-repeat;
+  }
+}
+
+.newsletter__socials__social{
   display: inline;
-  align-self: center;
   width: 32px; //32/16
   aspect-ratio: 1/1;
   overflow: hidden;
@@ -78,8 +95,14 @@
   color: transparent;
   background-position: center;
   background-size: 16px 16px;
-  border: 1px solid black;
+  border: 1px solid $gray_text;
   border-radius: 50%;
+
+  &:hover{
+    background-size: 16px 16px;
+    background-position: center;
+    border: 1px solid #f07f00;
+  }
 }
 
 

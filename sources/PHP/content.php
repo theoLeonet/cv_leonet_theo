@@ -6,7 +6,7 @@ $sec_nav = [
             'Experts',
             'Presse',
             'Ecoles',
-            'Youth'
+            'Jeunes'
         ],
         'links' => [
             '#',
@@ -19,13 +19,17 @@ $sec_nav = [
     'socials' => [
         'texts' => [
             'Twitter',
-            'Linkedin'
+            'Facebook',
+            'Instagram',
+            'Linkedin',
         ],
         'links' => [
             'https://twitter.com',
-            'https://linkedin.com'
-        ]
-    ]
+            'https://facebook.com',
+            'https://instagram.com',
+            'https://linkedin.com',
+        ],
+    ],
 ];
 $main_nav = [
     'main_menu' => [
@@ -56,7 +60,7 @@ $intro = [
     'texts' => [
         'C’est le nombre de langues qu’il parle. Le français, l’anglais, l’allemand et l’espagnol.',
         'C’est son nombre d’années d’expérience dans le domaine du design web.',
-        'C’est le nombre de projets qu’il à réalisé. En 6 ans, on peut dire qu’il est plutôt productif.'
+        'C’est le nombre de projets qu’il a réalisé.'
     ],
     'socials' => [
         'texts' => [
@@ -77,10 +81,10 @@ $about = [
     'subtitles' => [
         'Pays',
         'Skills',
-        'Personalité',
+        'Personnalité',
         'But',
         'Métier',
-        'Centres d’interet',
+        'Centres d’interêt',
         'Études',
         'Projets actuels',
     ],
@@ -92,7 +96,7 @@ $about = [
         'Fondateur de la WDF et développeur front-end',
         'Le design web, l’accessibilité en ligne et la cuisine',
         'Langues et infographie (Spécialisation web)',
-        'Developper une application qui nettoie automatiquement les pages web du contenu inutile'
+        'Développer une application qui nettoie automatiquement les pages web du contenu inutile'
     ],
 ];
 $did_you_know = [
@@ -100,45 +104,64 @@ $did_you_know = [
         'Théo, cuisinier à ses heures perdues',
         'Il aime voyager',
         'Il fait du web par chance',
-        'Théo, musicien... plus ou moins',
-        'Il n’y arriverait pas seul'
     ],
     'texts' => [
-        'Il aime les pates au fromage par dessus tout, et ce depuis qu’il est tout petit. Depuis quelques années maintenant, il a décidé d‘adopter un régime végétarien.',
+        'Il aime les pates au fromage par dessus tout. Depuis quelques années maintenant, il a décidé d‘adopter un régime végétarien.',
 
         'Il est déjà allé dans plein de pays d’Europe (France, Italie, Allemagne, Angleterre, Autriche, Luxembourg, Pays-Bas,...) et à pour ambition d’aller vivre en Corée.',
 
-        'Au départ, il devait aller dans une école de dessin, mais il à raté l’examen d’entrée. Il s’est alors retrouvé par hasard à la HEPL de Seraing et à découvert le monde fascinant du web.',
-
-        'Il a depuis toujours fait de la musique avec plus ou moins de succès. D’abord petit, il à appris à jouer du piano, puis plus tard, il s’est acheté un ukulélé et une guitare dont il a appris à jouer par lui même.',
-
-        'Sans sa copine pour le pousser à travailler et le soutenir dans toutes les situations, il aurait déjà abandonné plus d’une fois. C’est aussi elle qui est derrière ses plus brillantes idées.',
+        'Au départ, il devait aller dans une école de dessin, mais il à raté l’examen d’entrée. Il s’est alors retrouvé par hasard à la HEPL et a découvert le monde fascinant du web.',
     ],
 ];
 $projects = [
     'images__src' => [
-        'sources/pictures/original/placeholders/1920x1080.jpg',
-        'sources/pictures/original/placeholders/1920x1080.jpg',
-        'sources/pictures/original/placeholders/1920x1080.jpg',
-        'sources/pictures/original/placeholders/1920x1080.jpg',
+        'sources/pictures/resized/projects/savannair-1920x1080.jpg',
+        'sources/pictures/resized/projects/portfolio-1920x1080.jpg',
+        'sources/pictures/resized/projects/cv-1920x1080',
     ],
     'images__srcset' => [
-        'sources/pictures/original/placeholders/1920x1080.jpg',
-        'sources/pictures/original/placeholders/1920x1080.jpg',
-        'sources/pictures/original/placeholders/1920x1080.jpg',
-        'sources/pictures/original/placeholders/1920x1080.jpg',
+        '
+        sources/pictures/resized/projects/savannair-1920x1080.jpg 1920w,
+        sources/pictures/resized/projects/savannair-1600x1900.jpg 1600w,
+        sources/pictures/resized/projects/savannair-1366x768.jpg  1336w,
+        sources/pictures/resized/projects/savannair-1024x576.jpg  1024w,
+        sources/pictures/resized/projects/savannair-768x432.jpg   768w ,
+        sources/pictures/resized/projects/savannair-640x360.jpg   640w ,
+        sources/pictures/resized/projects/savannair-544x306.jpg   544w 
+        ',
+        '
+        sources/pictures/resized/projects/portfolio-1920x1080.jpg 1920w,
+        sources/pictures/resized/projects/portfolio-1600x1900.jpg 1600w,
+        sources/pictures/resized/projects/portfolio-1366x768.jpg  1336w,
+        sources/pictures/resized/projects/portfolio-1024x576.jpg  1024w,
+        sources/pictures/resized/projects/portfolio-768x432.jpg   768w ,
+        sources/pictures/resized/projects/portfolio-640x360.jpg   640w ,
+        sources/pictures/resized/projects/portfolio-544x306.jpg   544w 
+        ','
+        sources/pictures/resized/projects/cv-1920x1080.jpg 1920w,
+        sources/pictures/resized/projects/cv-1600x1900.jpg 1600w,
+        sources/pictures/resized/projects/cv-1366x768.jpg  1336w,
+        sources/pictures/resized/projects/cv-1024x576.jpg  1024w,
+        sources/pictures/resized/projects/cv-768x432.jpg   768w ,
+        sources/pictures/resized/projects/cv-640x360.jpg   640w ,
+        sources/pictures/resized/projects/cv-544x306.jpg   544w 
+        ',
+
     ],
     'images__alt' => [
-        'fake_project_1',
-        'fake_project_1',
-        'fake_project_1',
-        'fake_project_1',
+        'Image du projet Savannair',
+        'Image de mon site portfolio',
+        'Image de mon site CV',
     ],
     'names' => [
-        'Nom du projet',
-        'Nom du projet',
-        'Nom du projet',
-        'Nom du projet',
+        'Savannair',
+        'Mon portfolio',
+        'Mon CV',
+    ],
+    'excerpt' => [
+        'L’air est de plus en plus pollué et nous avons besoin de solutions. Pour trouver des solutions, il faut des données. Et justement, les modules Savannair sont la pour en fournir.',
+        'Mon portfolio est mon site personnel sur lequel je parle de moi et j’expose mes différents travaux.',
+        'Mon CV est le site sur lequel vous vous trouvez actuellement.'
     ],
 ];
 $engagement = [
@@ -191,45 +214,83 @@ $engagement = [
         'calc((85vw - 10em)/2)',
 
     'images__alt' => [
-        'Computer with Designers should always keep their users in mind written on it',
-        'Forest of pine trees from the top',
-        'Old man struggling to use a computer',
+        'Ordinateur sur lequel il est écrit "Designers should always keep their users in mind"',
+        'Forêt de sapin vue du dessus',
+        'Vieil homme utilisant difficilement un ordinateur',
     ],
 ];
 $pictures = [
     'src' => [
-        'sources/pictures/original/placeholders/1920x1080.jpg',
-        'sources/pictures/original/placeholders/1920x1080.jpg',
-        'sources/pictures/original/placeholders/1920x1080.jpg',
-        'sources/pictures/original/placeholders/1920x1080.jpg',
+        'sources/pictures/resized/projects/savannair-1920x1080.jpg',
+        'sources/pictures/resized/projects/portfolio-1920x1080.jpg',
+        'sources/pictures/resized/projects/cv-1920x1080.jpg',
+        'sources/pictures/resized/projects/portfolio2-1920x1080.jpg'
+    ],
+    'srcset' => [
+        '
+        sources/pictures/resized/projects/savannair-1920x1080.jpg 1920w,
+        sources/pictures/resized/projects/savannair-1600x1900.jpg 1600w,
+        sources/pictures/resized/projects/savannair-1366x768.jpg  1336w,
+        sources/pictures/resized/projects/savannair-1024x576.jpg  1024w,
+        sources/pictures/resized/projects/savannair-768x432.jpg   768w ,
+        sources/pictures/resized/projects/savannair-640x360.jpg   640w ,
+        sources/pictures/resized/projects/savannair-544x306.jpg   544w 
+        ',
+        '
+        sources/pictures/resized/projects/portfolio-1920x1080.jpg 1920w,
+        sources/pictures/resized/projects/portfolio-1600x1900.jpg 1600w,
+        sources/pictures/resized/projects/portfolio-1366x768.jpg  1336w,
+        sources/pictures/resized/projects/portfolio-1024x576.jpg  1024w,
+        sources/pictures/resized/projects/portfolio-768x432.jpg   768w ,
+        sources/pictures/resized/projects/portfolio-640x360.jpg   640w ,
+        sources/pictures/resized/projects/portfolio-544x306.jpg   544w 
+        ','
+        sources/pictures/resized/projects/cv-1920x1080.jpg 1920w,
+        sources/pictures/resized/projects/cv-1600x1900.jpg 1600w,
+        sources/pictures/resized/projects/cv-1366x768.jpg  1336w,
+        sources/pictures/resized/projects/cv-1024x576.jpg  1024w,
+        sources/pictures/resized/projects/cv-768x432.jpg   768w ,
+        sources/pictures/resized/projects/cv-640x360.jpg   640w ,
+        sources/pictures/resized/projects/cv-544x306.jpg   544w 
+        ',
+        '
+        sources/pictures/resized/projects/portfolio2-1920x1080.jpg 1920w,
+        sources/pictures/resized/projects/portfolio2-1600x1900.jpg 1600w,
+        sources/pictures/resized/projects/portfolio2-1366x768.jpg  1336w,
+        sources/pictures/resized/projects/portfolio2-1024x576.jpg  1024w,
+        sources/pictures/resized/projects/portfolio2-768x432.jpg   768w ,
+        sources/pictures/resized/projects/portfolio2-640x360.jpg   640w ,
+        sources/pictures/resized/projects/portfolio2-544x306.jpg   544w 
+        ',
+
     ],
     'alt' => [
-        'forest.jpg',
-        'forest.jpg',
-        'forest.jpg',
-        'forest.jpg',
-    ]
+        'Image du projet Savannair',
+        'Image de mon site portfolio',
+        'Image de mon site CV',
+        'Image de mon site portfolio',
+    ],
 ];
 $latest = [
     'titles' => [
-        'Developpeur front-end, un métier en pénurie',
+        'Développeur front-end, un métier en pénurie',
         'Comment bien utiliser CSS grid layout',
-        'Comment bien utiliser CSS grid layout',
+        'Optimiser un site pour les nuls',
     ],
     'subtitles' => [
         'Acutalités',
-        'Acutalités',
-        'Acutalités',
+        'Guides',
+        'Guides',
     ],
     'dates' => [
-        '10.08.2021 - 10:27',
-        '10.08.2021 - 10:27',
-        '10.08.2021 - 10:27',
+        '10.05.2022 - 10:27',
+        '7.06.2022 - 08:43',
+        '12.06.2022 - 23:00',
     ],
     'images__src' => [
         'sources/pictures/resized/articles/front-end-dev-640x360.jpg',
         'sources/pictures/resized/articles/grid-640x360.jpg',
-        'sources/pictures/resized/articles/grid-640x360.jpg',
+        'sources/pictures/resized/articles/optimization-640x360.jpg',
     ],
     'images__srcset' => [
         '
@@ -247,11 +308,11 @@ $latest = [
         sources/pictures/resized/articles/grid-256x144.jpg 256w
         ',
         '
-        sources/pictures/resized/articles/grid-640x360.jpg 640w,
-        sources/pictures/resized/articles/grid-544x306.jpg 544w,
-        sources/pictures/resized/articles/grid-416x234.jpg 416w,
-        sources/pictures/resized/articles/grid-304x171.jpg 304w,
-        sources/pictures/resized/articles/grid-256x144.jpg 256w
+        sources/pictures/resized/articles/optimization-640x360.jpg 640w,
+        sources/pictures/resized/articles/optimization-544x306.jpg 544w,
+        sources/pictures/resized/articles/optimization-416x234.jpg 416w,
+        sources/pictures/resized/articles/optimization-304x171.jpg 304w,
+        sources/pictures/resized/articles/optimization-256x144.jpg 256w
         ',
     ],
     'images__sizes' =>
@@ -262,9 +323,9 @@ $latest = [
         '
         ,
     'images__alt' => [
-        'Hands coding on a computer',
-        'Css grid layout example',
-        'Css grid layout example',
+        'Mains qui codent sur un ordinateur',
+        'Exemple de grid layout css',
+        'Image représentant l’optimisation pour le web',
     ],
 ];
 $newsletter = [
@@ -273,14 +334,12 @@ $newsletter = [
             'Twitter',
             'Facebook',
             'Instagram',
-            'Youtube',
             'Linkedin'
         ],
         'links' => [
             'https://twitter.com',
             'https://facebook.com',
             'https://instagram.com',
-            'https://youtube.com',
             'https://linkedin.com'
         ]
     ]
@@ -288,7 +347,7 @@ $newsletter = [
 $wdf__infos = [
     'numbers' => [
         '+3500',
-        '65vw',
+        '65%',
         '150',
     ],
     'texts' => [
@@ -313,6 +372,8 @@ $useful = [
         '#',
         '#',
         '#',
+    ],
+    'orange-links' => [
         '#',
         '#',
         '#',
@@ -334,6 +395,8 @@ $useful = [
         'Concours',
         'WDF-shop',
         'Histoire de la WDF',
+    ],
+    'orange-texts' => [
         'Jobs',
         'Contactez-nous',
         'FAQ',
@@ -345,14 +408,12 @@ $useful = [
             'Twitter',
             'Facebook',
             'Instagram',
-            'Youtube',
             'Linkedin'
         ],
         'links' => [
             'https://twitter.com',
             'https://facebook.com',
             'https://instagram.com',
-            'https://youtube.com',
             'https://linkedin.com'
         ]
     ]
@@ -368,31 +429,11 @@ $footer = [
         'Politique de protection de la vie privée',
         'Politique en matière de cookies',
     ],
-    'logos' => [
-        'links' => [
-            '#',
-            '#',
-            '#',
-            '#',
-        ],
-        'images__src' => [
-            '#',
-            '#',
-            '#',
-            '#',
-        ],
-        'images__alt' => [
-            'logo',
-            'logo',
-            'logo',
-            'logo',
-        ],
-    ],
     'infos' => [
         'texts' => [
             'WDF est une organisation totalement fictionnelle',
-            'Numéro d’enregistrement national: BE 0408.656.248',
-            'Numéro d’exonération fiscale: BE 0420.952.383',
+            'Numéro d’enregistrement national: BE 0428.606.2982',
+            'Numéro d’exonération fiscale: BE 0410.902.4832',
         ],
     ],
 ];
